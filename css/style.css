@@ -415,7 +415,12 @@
     width: 390px;
 }
 
-
+.w-100 {
+    width: 100% !important;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
 /* CONTACTO */
 
 .comunidad{
