@@ -274,31 +274,6 @@
 
 /*NOSOTROS*/
 
-
-
-.nosotros{
-    background-image: url(../img/nosotros.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 600px;
-}
-
-.nosotros h2{
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    margin: 40px;
-}
-
-.nosotros p{
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    margin-top: 20px;
-}
-
 .nosotros-P{
     font-size: 30px;
     font-family: "Poetsen One", sans-serif;
@@ -327,6 +302,38 @@
     width: 100%;
     height: 1000px;
     margin-bottom: 40px;
+}
+
+.iconos-1 a img{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconos-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.iconos-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.iconos-2 a{
+    text-decoration: none;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 300;
 }
 
 .nosotros-1 iframe{
