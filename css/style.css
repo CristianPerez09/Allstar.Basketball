@@ -336,7 +336,8 @@
     font-weight: 300;
 }
 
-.nosotros-1 iframe{
+.maps iframe{
+    margin-top: 50px;
     align-items: center;
 }
 
@@ -344,23 +345,26 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
-    padding: 20px;
 }
 
+.nosotros-3 h2{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+}
 
-
-.nosotros-1 p{
+.nosotros-3{
     color: white;
     border: 2px rgb(255, 255, 255);
-    width: 500px;
+    width: 600px;
+    height: 600px;
     margin-right: 50px;
+    text-align: center;
 }
 
 .nosotros-2{
+    width: 600px;
     margin-right: 50px;
     background-color: white;
-    width: 500px;
     font-size: 30px;
     font-family: "Poetsen One", sans-serif;
     font-weight: 600;
@@ -370,6 +374,7 @@
     margin-top: 30px;
 }
 
+
 .nosotros-3 a{
     text-decoration: none;
     color: black;
@@ -378,7 +383,6 @@
 
 
 .nosotros-3 img{
-    margin-left: 100px;
     width: 250px;
     height: 150px;
 }
@@ -471,12 +475,6 @@
     width: 390px;
 }
 
-.w-100 {
-    width: 100% !important;
-    height: 600px;
-    object-fit: cover;
-    margin-bottom: 30px;
-}
 /* CONTACTO */
 
 .comunidad{
@@ -543,7 +541,6 @@
     border-radius: 10px;
 }
 
-
 .enviar{
     display: flex;
     flex-direction: row-reverse;
@@ -560,8 +557,6 @@
     width: 400px;
     height: 45px;
 }
-
-
 
 .terminos{
     text-align: center;
@@ -918,13 +913,6 @@
     margin: 10px
 }
 
-.nosotros-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 20px;
-}
 .grid-container{
     display: grid;
     grid-template-columns: 1, 900px;
@@ -933,6 +921,40 @@
     margin-left: 30px;
     margin-top: 30px;
     }
+
+    .nosotros-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.nosotros-2{
+    margin-right: 50px;
+    background-color: white;
+    width: 500px;
+    font-size: 30px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 0px;
+}
+
+.nosotros-3{
+    font-size: 13px;
+    color: white;
+    border: 2px rgb(255, 255, 255);
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+.nosotros-3 img{
+    width: 110px;
+    height: 80px;
+}
 }
 
 @media screen and (max-width: 761px) {
@@ -992,13 +1014,82 @@
     width: 50%;
     height: 200px;
 }
-.nosotros-1 p{
-    border: 2px white;
-    width: 300px;
-    height: 100%;
+.Productos-t p{
+    color: #9e3500;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Arial, Helvetica;
 }
+
+.Productos-t h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Productos-t h3{
+    font-size: 10px;
+    color: #6c6c6d;
+    font-family: Arial, Helvetica;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+.Productos-t h4{
+    font-size: 15px;
+    color: black;
+    font-family: Arial, Helvetica;
+    font-weight: 700;
+}
+
 .nosotros-1 iframe{
     width: 300px;
+}
+.nosotros-2{
+    margin-right: 0px;
+    background-color: white;
+    width: 100%;
+    font-size: 15px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px;
+    border-radius: 20px;
+    margin-top: 0px;
+}
+
+.nosotros-3{
+    margin-left: 40px;
+    font-size: 13px;
+    color: white;
+    border: 2px rgb(255, 255, 255);
+    width: 350px;
+    height: 650px;
+    text-align: center;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.maps iframe{
+    width: 200px;
+    height: 150px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.iconos-2 a{
+    text-decoration: none;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+}
+.iconos-1 a img{
+    width: 40px;
+    height: 40px;
 }
 }
 
@@ -1348,4 +1439,8 @@
     width: 130px;
     height: 30px;
 }
+.contraseña{
+    padding-top: 15px;
+}
+
 }
