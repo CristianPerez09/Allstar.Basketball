@@ -755,6 +755,8 @@
 
 .fondo h2{
     margin-left: 20px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.705);
 }
 
 .fondo a{
@@ -767,13 +769,6 @@
     color: rgb(151, 151, 151);
     padding-left: 0 !important;
 }
-
-.fondo h2{
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.705);
-}
-
-
 
 
 

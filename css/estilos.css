@@ -1,4 +1,291 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Codystar:wght@300;400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Anton&family=Bebas+Neue&family=Carter+One&family=Codystar:wght@300;400&family=Lilita+One&family=Poetsen+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header .titulo {
+  font-family: "Abril Fatface";
+  color: white;
+  background-color: #111;
+}
+header .titulo h1 {
+  font-family: Arial, Helvetica;
+  text-align: center;
+  margin-bottom: 0 !important;
+  margin-left: 20px;
+  font-size: 15px;
+  padding: 5px;
+}
+header .allstar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: rgba(235, 235, 235, 0.8470588235);
+}
+header .allstar ul {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+header .allstar li {
+  display: flex;
+  justify-content: space-around;
+}
+header .allstar img {
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+header .allstar a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-family: Arial, Helvetica;
+  margin-left: 5px;
+}
+
+.navbar-collapse {
+  flex-grow: inherit;
+  flex-basis: 60% !important;
+  align-items: center;
+  font-weight: 650;
+}
+
+.me-2 {
+  border-radius: 999px;
+}
+
+.me-2:hover {
+  border-color: #111;
+}
+
+.bi-bag-check-fill {
+  margin-left: 10px;
+}
+
+.nav-item li a {
+  font-size: 40px;
+}
+
+.logo {
+  width: 120px;
+  height: 80px;
+}
+
+.btn-secondary {
+  background-color: black;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.menu .home p {
+  margin-top: 20px;
+}
+.menu .home a {
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+}
+.menu .home h3 {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.caja {
+  display: flex;
+  margin-top: 20px;
+}
+.caja .caja-1 {
+  width: 250px;
+  height: 100%;
+  border: 2px white solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.caja .caja-1 .oportunidades {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.349);
+  width: 170px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.caja .caja-1 .oportunidades h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.caja .caja-1 .oportunidades .oportunidades-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.caja .caja-1 .oportunidades .oportunidades-1 label {
+  height: 20px;
+  width: 30%;
+  border: 1px solid rgba(22, 20, 20, 0.4941176471);
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.caja .caja-1 .tecno {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.caja .caja-1 .tecno h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.caja .caja-2 {
+  width: 100%;
+  height: 100%;
+  border: 2px white solid;
+}
+.caja .caja-2 .zapatillas {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.caja .caja-2 .zapatillas div {
+  text-align: center;
+  border: 2px solid white;
+  width: 400px;
+  padding: 10px;
+  margin: 20px;
+}
+.caja .caja-2 .zapatillas div img {
+  width: 100%;
+  height: 350px;
+}
+.caja .caja-2 .zapatillas div p {
+  color: #9e3500;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: Arial, Helvetica;
+}
+.caja .caja-2 .zapatillas div h2 {
+  font-size: 20px;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.caja .caja-2 .zapatillas div h3 {
+  font-size: 15px;
+  color: #6c6c6d;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.caja .caja-2 .zapatillas div h4 {
+  font-size: 15px;
+  color: black;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+}
+.caja .caja-2 .zapatillas div button {
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+}
+
+.fondo {
+  font-family: "Ancizar Serif", serif;
+  background-color: #111;
+  width: 100%;
+  height: 250px;
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.fondo div h2 {
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.705);
+}
+.fondo div ul {
+  list-style: none;
+  margin: 20px;
+  color: rgb(151, 151, 151);
+  padding-left: 0 !important;
+}
+.fondo .pedidos p {
+  margin: 20px;
+  font-size: 20px;
+}
+.fondo .pedidos a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.705);
+}
+
+.derechos {
+  font-size: 15px;
+  text-align: center;
+  background-color: #111;
+  width: 100%;
+  color: rgb(151, 151, 151);
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  border-top: 1px solid rgba(170, 170, 170, 0.342);
+}
+.derechos .derechos-1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.derechos .derechos-1 a {
+  margin-left: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(151, 151, 151);
+}
+.derechos .derechos-1 img {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.derechos .derechos-2 {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.derechos .derechos-2 a {
+  font-size: 13px;
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(151, 151, 151);
+}
+
 @media screen and (max-width: 1629px) {
   .zapatillas div {
     text-align: center;
