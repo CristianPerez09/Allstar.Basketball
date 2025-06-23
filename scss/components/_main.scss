@@ -152,3 +152,369 @@
         }
     }
 }
+
+//? NOSOTROS
+
+.nosotros-1 {
+    background-image: url(../img/nosotros-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .nosotros-3 {
+        color: white;
+        border: 2px rgb(255, 255, 255);
+        width: 600px;
+        height: 600px;
+        margin-right: 50px;
+        text-align: center;
+
+        img {
+            width: 250px;
+            height: 150px;
+        }
+
+        h2 {
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 400;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            .nosotros-2 {
+                width: 600px;
+                margin-right: 50px;
+                background-color: white;
+                font-size: 30px;
+                font-family: "Poetsen One", sans-serif;
+                font-weight: 600;
+                text-align: center;
+                padding: 5px;
+                border-radius: 20px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .maps {
+
+        div {
+
+            iframe {
+                margin-top: 50px;
+                align-items: center;
+            }
+        }
+    }
+
+    .iconos {
+        display: flex;
+        justify-content: space-around;
+
+        .iconos-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            a {
+                img {
+                    background-color: white;
+                    border: 2px solid white;
+                    border-radius: 999px;
+                    padding: 8px;
+                    margin: 10px;
+                }
+            }
+        }
+
+        .iconos-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Poetsen One", sans-serif;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.nosotros-P {
+    font-size: 30px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.Productos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+    div {
+        border: 2px white solid;
+        width: 400px;
+        height: 600px;
+        text-align: center;
+        margin: 50px;
+
+        img {
+            width: 100%;
+            height: 420px;
+        }
+
+        p {
+            color: #9e3500;
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 15px;
+            font-family: Arial, Helvetica;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-family: Arial, Helvetica;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 15px;
+            color: #6c6c6d;
+            font-family: Arial, Helvetica;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        h4 {
+            font-size: 15px;
+            color: black;
+            font-family: Arial, Helvetica;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border-radius: 999px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    .productos-c {
+        img {
+            width: 100%;
+        }
+    }
+
+    .productos-r {
+        img {
+            width: 390px;
+        }
+    }
+}
+
+//? MUJER / HOMBRE
+
+    .sec-mujer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            width: 50%;
+            height: 700px;
+        }
+
+    .sec-mujer-titulo {
+        text-align: center;
+
+        h2 {
+            font-size: 60px;
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: Arial, Helvetica;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        button {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 999px;
+            padding: 10px;
+        }
+    }
+}
+.zapatillas {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px;
+
+            div {
+                text-align: center;
+                border: 2px solid white;
+                width: 400px;
+                padding: 10px;
+                margin: 20px;
+
+                img {
+                    width: 100%;
+                    height: 350px;
+                }
+
+                p {
+                    color: #9e3500;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                    font-size: 15px;
+                    font-family: Arial, Helvetica;
+                }
+
+                h2 {
+                    font-size: 20px;
+                    font-family: Arial, Helvetica;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    font-size: 15px;
+                    color: #6c6c6d;
+                    font-family: Arial, Helvetica;
+                    font-weight: 700;
+                    margin-top: 20px;
+                }
+
+                h4 {
+                    font-size: 15px;
+                    color: black;
+                    font-family: Arial, Helvetica;
+                    font-weight: 700;
+                }
+
+                button {
+                    background-color: black;
+                    color: white;
+                    border-radius: 999px;
+                    padding: 10px;
+                    margin-top: 10px;
+                }
+            }
+        }
+.calzado {
+    margin: 50px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.sec-mujer1 {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 50%;
+            height: 800px;
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            margin-top: 15px;
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 200;
+            font-size: 20px;
+        }
+    }
+}
+
+.Productos-t {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+        div {
+        border: 2px white solid;
+        width: 435px;
+        height: 650px;
+        text-align: center;
+        margin: 50px;
+
+                img {
+                width: 100%;
+                height: 480px;
+            }
+
+            p {
+                color: #9e3500;
+                margin-top: 10px;
+                font-weight: 700;
+                font-size: 15px;
+                font-family: Arial, Helvetica;
+            }
+
+            .Productos-t h2 {
+                font-size: 20px;
+                font-family: Arial, Helvetica;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .Productos-t h3 {
+                font-size: 15px;
+                color: #6c6c6d;
+                font-family: Arial, Helvetica;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+
+
+            .Productos-t h4 {
+                font-size: 15px;
+                color: black;
+                font-family: Arial, Helvetica;
+                font-weight: 700;
+            }
+
+            .Productos-t button {
+                background-color: black;
+                color: white;
+                border-radius: 999px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+
+        }
+    }

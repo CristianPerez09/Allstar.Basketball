@@ -210,6 +210,313 @@ header .allstar a {
   margin-top: 10px;
 }
 
+.nosotros-1 {
+  background-image: url(../img/nosotros-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1000px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nosotros-1 .nosotros-3 {
+  color: white;
+  border: 2px rgb(255, 255, 255);
+  width: 600px;
+  height: 600px;
+  margin-right: 50px;
+  text-align: center;
+}
+.nosotros-1 .nosotros-3 img {
+  width: 250px;
+  height: 150px;
+}
+.nosotros-1 .nosotros-3 h2 {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+}
+.nosotros-1 .nosotros-3 a {
+  text-decoration: none;
+  color: black;
+}
+.nosotros-1 .nosotros-3 a .nosotros-2 {
+  width: 600px;
+  margin-right: 50px;
+  background-color: white;
+  font-size: 30px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.nosotros-1 .maps div iframe {
+  margin-top: 50px;
+  align-items: center;
+}
+.nosotros-1 .iconos {
+  display: flex;
+  justify-content: space-around;
+}
+.nosotros-1 .iconos .iconos-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.nosotros-1 .iconos .iconos-1 a img {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 999px;
+  padding: 8px;
+  margin: 10px;
+}
+.nosotros-1 .iconos .iconos-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.nosotros-1 .iconos .iconos-2 a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 300;
+}
+
+.nosotros-P {
+  font-size: 30px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+.Productos {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.Productos div {
+  border: 2px white solid;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  margin: 50px;
+}
+.Productos div img {
+  width: 100%;
+  height: 420px;
+}
+.Productos div p {
+  color: #9e3500;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: Arial, Helvetica;
+}
+.Productos div h2 {
+  font-size: 20px;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.Productos div h3 {
+  font-size: 15px;
+  color: #6c6c6d;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.Productos div h4 {
+  font-size: 15px;
+  color: black;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.Productos div button {
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.Productos .productos-c img {
+  width: 100%;
+}
+.Productos .productos-r img {
+  width: 390px;
+}
+
+.sec-mujer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sec-mujer img {
+  width: 50%;
+  height: 700px;
+}
+.sec-mujer .sec-mujer-titulo {
+  text-align: center;
+}
+.sec-mujer .sec-mujer-titulo h2 {
+  font-size: 60px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.sec-mujer .sec-mujer-titulo p {
+  font-size: 20px;
+  font-family: Arial, Helvetica;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.sec-mujer .sec-mujer-titulo button {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  padding: 10px;
+}
+
+.zapatillas {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.zapatillas div {
+  text-align: center;
+  border: 2px solid white;
+  width: 400px;
+  padding: 10px;
+  margin: 20px;
+}
+.zapatillas div img {
+  width: 100%;
+  height: 350px;
+}
+.zapatillas div p {
+  color: #9e3500;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: Arial, Helvetica;
+}
+.zapatillas div h2 {
+  font-size: 20px;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.zapatillas div h3 {
+  font-size: 15px;
+  color: #6c6c6d;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.zapatillas div h4 {
+  font-size: 15px;
+  color: black;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+}
+.zapatillas div button {
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.calzado {
+  margin: 50px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.sec-mujer1 {
+  display: flex;
+  flex-direction: column;
+}
+.sec-mujer1 div {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-mujer1 div img {
+  width: 50%;
+  height: 800px;
+}
+.sec-mujer1 div {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-mujer1 div a {
+  margin-top: 15px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.Productos-t {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.Productos-t div {
+  border: 2px white solid;
+  width: 435px;
+  height: 650px;
+  text-align: center;
+  margin: 50px;
+}
+.Productos-t div img {
+  width: 100%;
+  height: 480px;
+}
+.Productos-t div p {
+  color: #9e3500;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: Arial, Helvetica;
+}
+.Productos-t div .Productos-t h2 {
+  font-size: 20px;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.Productos-t div .Productos-t h3 {
+  font-size: 15px;
+  color: #6c6c6d;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.Productos-t div .Productos-t h4 {
+  font-size: 15px;
+  color: black;
+  font-family: Arial, Helvetica;
+  font-weight: 700;
+}
+.Productos-t div .Productos-t button {
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
 .whatsapp {
   position: fixed;
   right: 30px;

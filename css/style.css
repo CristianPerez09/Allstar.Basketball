@@ -160,7 +160,7 @@
     color: white;
     border-radius: 999px;
     padding: 10px;
-    margin-top: 10  px;
+    margin-top: 10px;
 }
 
 .camperas img{
@@ -337,7 +337,7 @@
     font-weight: 300;
 }
 
-.maps iframe{
+.maps div iframe{
     margin-top: 50px;
     align-items: center;
 }
@@ -388,25 +388,6 @@
     height: 150px;
 }
 
-.Productos-m{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-}
-
-.Productos-m div{
-    border: 2px black solid;
-    width: 400px;
-    height: 550px;
-    text-align: center;
-    margin: 50px
-}
-
-.Productos-m img{
-    width: 350px;
-    height: 420px;
-
-}
 
 .Productos{
     display: flex;
@@ -568,42 +549,15 @@
 
 /* MUJER / HOMBRE*/
 
-
-.mujer{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.mujer a{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: Arial, Helvetica;
-    margin-left: 10px;
-    padding-left: 20px;
-}
-
-.mujer ul{
-    display: flex;
-    list-style: none;
-    margin-top: 30px;
-}
-
 .sec-mujer{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .sec-mujer img{
     width: 50%;
     height: 700px;
-}
-
-.sec-mujer div{
-    display: flex;
-    flex-direction: column;
 }
 
 .sec-mujer-titulo{
@@ -686,7 +640,7 @@
 
 .Productos-t img{
     width: 100%;
-    height: 480px;;
+    height: 480px;
 }
 
 
