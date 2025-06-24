@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Codystar:wght@300;400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Anton&family=Bebas+Neue&family=Carter+One&family=Codystar:wght@300;400&family=Lilita+One&family=Poetsen+One&display=swap");
 * {
@@ -355,28 +354,29 @@ header .allstar a {
 .sec-mujer {
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 .sec-mujer img {
   width: 50%;
   height: 700px;
+  border-right: 5px solid white;
 }
-.sec-mujer .sec-mujer-titulo {
+
+.sec-mujer-titulo {
   text-align: center;
 }
-.sec-mujer .sec-mujer-titulo h2 {
+.sec-mujer-titulo h2 {
   font-size: 60px;
   font-family: "Poetsen One", sans-serif;
   font-weight: 600;
   margin-top: 10px;
 }
-.sec-mujer .sec-mujer-titulo p {
+.sec-mujer-titulo p {
   font-size: 20px;
   font-family: Arial, Helvetica;
   font-weight: 400;
   margin-top: 10px;
 }
-.sec-mujer .sec-mujer-titulo button {
+.sec-mujer-titulo button {
   text-align: center;
   font-size: 15px;
   font-weight: 600;
@@ -455,6 +455,7 @@ header .allstar a {
 .sec-mujer1 div img {
   width: 50%;
   height: 800px;
+  border-right: 5px solid white;
 }
 .sec-mujer1 div {
   display: flex;
@@ -490,31 +491,107 @@ header .allstar a {
   font-size: 15px;
   font-family: Arial, Helvetica;
 }
-.Productos-t div .Productos-t h2 {
+.Productos-t div h2 {
   font-size: 20px;
   font-family: Arial, Helvetica;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.Productos-t div .Productos-t h3 {
+.Productos-t div h3 {
   font-size: 15px;
   color: #6c6c6d;
   font-family: Arial, Helvetica;
   font-weight: 700;
   margin-top: 20px;
 }
-.Productos-t div .Productos-t h4 {
+.Productos-t div h4 {
   font-size: 15px;
   color: black;
   font-family: Arial, Helvetica;
   font-weight: 700;
 }
-.Productos-t div .Productos-t button {
+.Productos-t div button {
   background-color: black;
   color: white;
   border-radius: 999px;
   padding: 10px;
   margin-top: 10px;
+}
+
+.comunidad {
+  text-align: center;
+  margin-left: 30px;
+}
+.comunidad img {
+  width: 280px;
+  height: 200px;
+}
+.comunidad h2 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Alfa Slab One", serif;
+}
+.comunidad p {
+  font-size: 20px;
+}
+
+form .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 900px) !important;
+  grid-template-rows: repeat(4, 100px) !important;
+  gap: 0 18px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+form .grid-container .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+form .grid-container .container label {
+  margin: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica;
+}
+form .grid-container .container input {
+  height: auto;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3f3f40;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+form .grid-container .container select {
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3f3f40;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+form .grid-container .enviar {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 20px;
+}
+form .grid-container .enviar input {
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica;
+  font-weight: 600;
+  width: 400px;
+  height: 45px;
+}
+
+.terminos {
+  text-align: center;
+  font-weight: 700;
+  margin: 10px;
 }
 
 .whatsapp {
@@ -600,7 +677,22 @@ header .allstar a {
     width: 350px;
     padding: 10px;
   }
-  .container input {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 600px !important;
+    grid-template-rows: repeat(4, 100px);
+    gap: 0 18px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .grid-container .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: 400px;
+  }
+  .grid-container .container input {
     height: auto;
     font-size: 15px;
     font-family: Helvetica, Arial, sans-serif;
@@ -610,31 +702,8 @@ header .allstar a {
     padding: 10px;
     border-radius: 10px;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: 600px !important;
-    grid-template-rows: repeat(4, 100px);
-    gap: 0 18px;
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    width: 400px;
-  }
 }
 @media screen and (max-width: 1466px) {
-  .zapatillas div {
-    text-align: center;
-    border: 2px solid white;
-    width: 300px;
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 1317px) {
   .zapatillas div {
     text-align: center;
     border: 2px solid white;
@@ -675,46 +744,48 @@ header .allstar a {
     text-align: center;
     margin: 10px;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1, 900px;
-    grid-template-rows: repeat(4, 100px);
-    gap: 0 18px;
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-  .nosotros-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 20px;
-  }
-  .nosotros-2 {
-    margin-right: 50px;
-    background-color: white;
-    width: 500px;
-    font-size: 30px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 600;
-    text-align: center;
-    padding: 5px;
-    border-radius: 20px;
-    margin-top: 0px;
-  }
-  .nosotros-3 {
-    font-size: 13px;
-    color: white;
-    border: 2px rgb(255, 255, 255);
-    width: 350px;
-    height: 400px;
-    text-align: center;
-  }
-  .nosotros-3 img {
-    width: 110px;
-    height: 80px;
-  }
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1, 900px;
+  grid-template-rows: repeat(4, 100px);
+  gap: 0 18px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.nosotros-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+.nosotros-1 .nosotros-2 {
+  margin-right: 50px;
+  background-color: white;
+  width: 500px;
+  font-size: 30px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 0px;
+}
+.nosotros-1 .nosotros-3 {
+  font-size: 13px;
+  color: white;
+  border: 2px rgb(255, 255, 255);
+  width: 350px;
+  height: 400px;
+  text-align: center;
+}
+.nosotros-1 .nosotros-3 img {
+  width: 110px;
+  height: 80px;
+}
+
 @media screen and (max-width: 761px) {
   .fondo {
     font-family: "Ancizar Serif", serif;
@@ -758,413 +829,42 @@ header .allstar a {
     font-weight: 200;
     font-size: 25px;
   }
-  .sec-mujer1 a {
+  .sec-mujer1 div img {
+    width: 50%;
+    height: 200px;
+  }
+  .sec-mujer1 div a {
     margin-top: 15px;
     font-family: "Poetsen One", sans-serif;
     font-weight: 200;
     margin-left: 30px;
     font-size: 10px;
   }
-  .sec-mujer1 img {
-    width: 50%;
-    height: 200px;
-  }
-  .Productos-t p {
+  .Productos-t div p {
     color: #9e3500;
     margin-top: 10px;
     font-weight: 700;
     font-size: 15px;
     font-family: Arial, Helvetica;
   }
-  .Productos-t h2 {
+  .Productos-t div h2 {
     font-size: 15px;
     font-family: Arial, Helvetica;
     font-weight: 700;
     margin-bottom: 10px;
   }
-  .Productos-t h3 {
+  .Productos-t div h3 {
     font-size: 10px;
     color: #6c6c6d;
     font-family: Arial, Helvetica;
     font-weight: 700;
     margin-top: 20px;
   }
-  .Productos-t h4 {
+  .Productos-t div h4 {
     font-size: 15px;
     color: black;
     font-family: Arial, Helvetica;
     font-weight: 700;
-  }
-  .nosotros-1 iframe {
-    width: 300px;
-  }
-  .nosotros-2 {
-    margin-right: 0px;
-    background-color: white;
-    width: 100%;
-    font-size: 15px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 600;
-    text-align: center;
-    padding: 3px;
-    border-radius: 20px;
-    margin-top: 0px;
-  }
-  .nosotros-3 {
-    margin-left: 40px;
-    font-size: 13px;
-    color: white;
-    border: 2px rgb(255, 255, 255);
-    width: 350px;
-    height: 650px;
-    text-align: center;
-    padding: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .maps iframe {
-    width: 200px;
-    height: 150px;
-    margin-top: 30px;
-    align-items: center;
-  }
-  .iconos-2 a {
-    text-decoration: none;
-    color: white;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 300;
-    font-size: 10px;
-  }
-  .iconos-1 a img {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media screen and (max-width: 655px) {
-  .derechos {
-    font-size: 10px;
-    text-align: center;
-    background-color: #111;
-    width: 100%;
-    color: rgb(151, 151, 151);
-    text-decoration: none;
-    border-top: 1px solid rgba(170, 170, 170, 0.342);
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .derechos-1 a {
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: 7px;
-    text-decoration: none;
-    color: rgb(151, 151, 151);
-  }
-  .derechos-2 {
-    text-decoration: none;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 200px) !important;
-    grid-template-rows: repeat(4, 100px);
-    gap: 0 18px;
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    width: 200px;
-  }
-}
-@media screen and (max-width: 614px) {
-  .zapatillas div {
-    text-align: center;
-    border: 2px solid white;
-    width: 175px;
-    padding: 5px;
-  }
-  .zapatillas div img {
-    width: 100%;
-    height: 200px;
-  }
-  .caja-1 {
-    width: 175px;
-    height: 100%;
-    border: 2px white solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .fondo a img {
-    padding-left: 10px;
-  }
-  .fondo ul li {
-    font-size: 15px;
-  }
-  .caja-2 {
-    width: 175px;
-    height: 100%;
-    border: 1px white solid;
-  }
-  .Productos-t {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-  .Productos-t div {
-    border: 2px white solid;
-    width: 200px;
-    height: 500px;
-    text-align: center;
-    margin: 10px;
-  }
-  .Productos-t img {
-    width: 100%;
-    height: 250px;
-  }
-  .titulo h1 {
-    font-family: Arial, Helvetica;
-    text-align: center;
-    margin-bottom: 0 !important;
-    margin-left: 20px;
-    font-size: 13px;
-    padding: 5px;
-  }
-  .Productos div {
-    border: 2px white solid;
-    width: 300px;
-    height: 600px;
-    text-align: center;
-    margin: 50px;
-  }
-  .Productos img {
-    width: 100%;
-    height: 320px;
-  }
-}
-@media screen and (max-width: 503px) {
-  .derechos {
-    font-size: 10px;
-    text-align: center;
-    background-color: #111;
-    width: 100%;
-    color: rgb(151, 151, 151);
-    text-decoration: none;
-    border-top: 1px solid rgba(170, 170, 170, 0.342);
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .caja-1 {
-    width: 100px;
-    height: 100%;
-    border: 2px white solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .zapatillas div {
-    text-align: center;
-    border: 2px solid white;
-    width: 200px;
-    padding: 5px;
-  }
-  .derechos-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
-  }
-  .derechos {
-    font-size: 15px;
-    text-align: center;
-    background-color: #111;
-    width: 100%;
-    color: rgb(151, 151, 151);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
-    border-top: 1px solid rgba(170, 170, 170, 0.342);
-  }
-  .derechos-1 {
-    display: flex;
-    justify-content: center;
-    padding-right: 20px;
-    margin: 10px;
-  }
-  .allstar img {
-    width: 30px;
-    height: 30px;
-    margin-left: 50px;
-    margin-top: 5px;
-  }
-  .allstar a {
-    text-decoration: none;
-    color: black;
-    font-size: 10px;
-    font-family: Arial, Helvetica;
-    margin-left: 5px;
-  }
-  .nosotros h2 {
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    margin: 40px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .home p {
-    margin-top: 20px;
-  }
-  .home p a {
-    text-decoration: none;
-    color: black;
-    margin-left: 15px;
-    font-size: 15px;
-  }
-  .home h3 {
-    margin-left: 10px;
-    font-size: 17px;
-  }
-  .zapatillas div {
-    text-align: center;
-    border: 2px solid white;
-    width: 150px;
-    padding: 5px;
-  }
-  .zapatillas div img {
-    width: 100%;
-    height: 150px;
-  }
-  .zapatillas h2 {
-    font-size: 15px;
-    font-family: Arial, Helvetica;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .zapatillas h3 {
-    font-size: 12px;
-    color: #6c6c6d;
-    font-family: Arial, Helvetica;
-    font-weight: 700;
-    margin-top: 20px;
-  }
-  .zapatillas h4 {
-    font-size: 12px;
-    color: black;
-    font-family: Arial, Helvetica;
-    font-weight: 700;
-  }
-  .caja-1 {
-    width: 155px;
-    height: 100%;
-    border: 2px white solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .oportunidades {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    font-weight: 500;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.349);
-    width: 130px;
-    margin-top: 20px;
-    padding-bottom: 20px;
-  }
-  .oportunidades label {
-    font-size: 13px;
-  }
-  .oportunidades h3 {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .tecno h3 {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .tecno {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .Productos div {
-    border: 2px white solid;
-    width: 250px;
-    height: 450px;
-    text-align: center;
-    margin: 50px;
-  }
-  .Productos img {
-    width: 100%;
-    height: 270px;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 175px) !important;
-    grid-template-rows: repeat(4, 100px);
-    gap: 0 0px;
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    width: 150px;
-  }
-  .container input {
-    height: auto;
-    font-size: 15px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #3f3f40;
-    font-weight: 400;
-    width: 130px;
-    padding: 5px;
-    border-radius: 10px;
-  }
-  .container label {
-    margin: 10px;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: Arial, Helvetica;
-  }
-  .comunidad h2 {
-    font-size: 20px;
-    font-weight: 400;
-    font-family: "Alfa Slab One", serif;
-  }
-  .comunidad p {
-    font-size: 15px;
-    margin-right: 10px;
-  }
-  .terminos {
-    text-align: center;
-    font-size: 10px;
-    font-weight: 700;
-    margin: 10px;
-  }
-  .enviar input {
-    background-color: #111;
-    color: #fff;
-    font-size: 12px;
-    font-family: Arial, Helvetica;
-    font-weight: 600;
-    width: 130px;
-    height: 30px;
-  }
-  .contraseña {
-    padding-top: 15px;
   }
 }
 
