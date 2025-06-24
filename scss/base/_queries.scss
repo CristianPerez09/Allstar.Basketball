@@ -175,66 +175,130 @@
 
     }
 
-    .zapatillas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-.calzado{
-    text-align: center;
-    margin: 50px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 200;
-    font-size: 25px;
+    .zapatillas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .calzado {
+        text-align: center;
+        margin: 50px;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 200;
+        font-size: 25px;
+    }
+
+    .sec-mujer1 {
+        div {
+            img {
+                width: 50%;
+                height: 200px;
+            }
+        }
+
+        div {
+            a {
+                margin-top: 15px;
+                font-family: "Poetsen One", sans-serif;
+                font-weight: 200;
+                margin-left: 30px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .Productos-t {
+        div {
+            p {
+                color: #9e3500;
+                margin-top: 10px;
+                font-weight: 700;
+                font-size: 15px;
+                font-family: Arial, Helvetica;
+            }
+
+            h2 {
+                font-size: 15px;
+                font-family: Arial, Helvetica;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 10px;
+                color: #6c6c6d;
+                font-family: Arial, Helvetica;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+
+            h4 {
+                font-size: 15px;
+                color: black;
+                font-family: Arial, Helvetica;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .nosotros-1 {
+        .nosotros-3 {
+            margin-left: 40px;
+            font-size: 13px;
+            color: white;
+            border: 2px rgb(255, 255, 255);
+            width: 350px;
+            height: 650px;
+            text-align: center;
+            padding: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .nosotros-2 {
+            margin-right: 0px;
+            background-color: white;
+            width: 100%;
+            font-size: 15px;
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 600;
+            text-align: center;
+            padding: 3px;
+            border-radius: 20px;
+            margin-top: 0px;
+        }
+    }
+
+    .maps {
+        div {
+            iframe {
+                width: 200px;
+                height: 150px;
+                margin-top: 30px;
+                align-items: center;
+            }
+        }
+    }
+
+    .iconos {
+        .iconos-1 {
+            a {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .iconos-2 {
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Poetsen One", sans-serif;
+                font-weight: 300;
+                font-size: 10px;
+            }
+        }
+    }
 }
 
-.sec-mujer1{
-    div{
-        img{
-            width: 50%;
-    height: 200px;
-        }
-    }
-    div{
-        a{
-            margin-top: 15px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 200;
-    margin-left: 30px;
-    font-size: 10px;
-        }
-    }
-}
-
-.Productos-t{
-    div{
-        p{
-            color: #9e3500;
-    margin-top: 10px;
-    font-weight: 700;
-    font-size: 15px;
-    font-family: Arial, Helvetica;
-        }
-        h2{
-            font-size: 15px;
-    font-family: Arial, Helvetica;
-    font-weight: 700;
-    margin-bottom: 10px;
-        }
-        h3{
-            font-size: 10px;
-    color: #6c6c6d;
-    font-family: Arial, Helvetica;
-    font-weight: 700;
-    margin-top: 20px;
-        }
-        h4{
-            font-size: 15px;
-    color: black;
-    font-family: Arial, Helvetica;
-    font-weight: 700;
-        }
-    }
-}
-}
