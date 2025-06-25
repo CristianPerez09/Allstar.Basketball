@@ -1153,17 +1153,6 @@
 }
 
 @media screen and (max-width: 503px){
-    .derechos{
-    font-size: 10px;
-    text-align: center;
-    background-color:#111;
-    width: 100%;
-    color: rgb(151, 151, 151);
-    text-decoration: none;
-    border-top: 1px solid rgba(170, 170, 170, 0.342);
-    display: flex;
-    flex-wrap: wrap;
-}
 .caja-1{
     width: 100px;
     height: 100%;
@@ -1389,5 +1378,4 @@
 .contraseña{
     padding-top: 15px;
 }
-
 }

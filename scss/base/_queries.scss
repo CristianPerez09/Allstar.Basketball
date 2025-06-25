@@ -302,3 +302,411 @@
     }
 }
 
+@media screen and (max-width: 655px) {
+    .derechos {
+        font-size: 10px;
+        text-align: center;
+        background-color: #111;
+        width: 100%;
+        color: rgb(151, 151, 151);
+        text-decoration: none;
+        border-top: 1px solid rgba(170, 170, 170, 0.342);
+        display: flex;
+        flex-wrap: wrap;
+
+        .derechos-1 {
+
+            a {
+                font-size: 15px;
+                margin-left: 20px;
+                margin-top: 7px;
+                text-decoration: none;
+                color: rgb(151, 151, 151);
+            }
+        }
+
+        .derechos-2 {
+            text-decoration: none;
+        }
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 200px) !important;
+        grid-template-rows: repeat(4, 100px);
+        gap: 0 18px;
+        margin-left: 30px;
+        margin-top: 30px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px;
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 614px) {
+    .zapatillas {
+
+        div {
+            text-align: center;
+            border: 2px solid white;
+            width: 175px;
+            padding: 5px;
+
+            img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+
+    .caja {
+
+        .caja-1 {
+            width: 175px;
+            height: 100%;
+            border: 2px white solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .caja-2 {
+            width: 175px;
+            height: 100%;
+            border: 1px white solid;
+        }
+    }
+
+    .fondo {
+        img {
+            padding-left: 10px;
+        }
+
+        li {
+            font-size: 15px;
+        }
+    }
+
+    .Productos-t {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+
+        div {
+            border: 2px white solid;
+            width: 200px;
+            height: 500px;
+            text-align: center;
+            margin: 10px;
+
+            img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+
+    .titulo {
+        h1 {
+            font-family: Arial, Helvetica;
+            text-align: center;
+            margin-bottom: 0 !important;
+            margin-left: 20px;
+            font-size: 13px;
+            padding: 5px;
+        }
+    }
+
+    .Productos {
+        div {
+            border: 2px white solid;
+            width: 300px;
+            height: 600px;
+            text-align: center;
+            margin: 50px;
+
+            img {
+                width: 100%;
+                height: 320px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 503px) {
+    .caja-1 {
+        width: 100px;
+        height: 100%;
+        border: 2px white solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .zapatillas {
+        div {
+            text-align: center;
+            border: 2px solid white;
+            width: 200px;
+            padding: 5px;
+        }
+    }
+
+    .derechos {
+        font-size: 15px;
+        text-align: center;
+        background-color: #111;
+        width: 100%;
+        color: rgb(151, 151, 151);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-decoration: none;
+        border-top: 1px solid rgba(170, 170, 170, 0.342);
+
+        .dereches-1 {
+            display: flex;
+            justify-content: center;
+            padding-right: 20px;
+            margin: 10px;
+        }
+
+        .derechos-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+    }
+
+    .allstar {
+        img {
+            width: 30px;
+            height: 30px;
+            margin-left: 50px;
+            margin-top: 5px;
+        }
+
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 10px;
+                    font-family: Arial, Helvetica;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .nosotros h2 {
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home {
+        h3 {
+            margin-left: 10px;
+            font-size: 17px;
+        }
+
+        p {
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                margin-left: 15px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .caja {
+        .caja-1 {
+            width: 155px;
+            height: 100%;
+            border: 2px white solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .oportunidades {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                font-weight: 500;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.349);
+                width: 130px;
+                margin-top: 20px;
+                padding-bottom: 20px;
+
+                label {
+                    font-size: 13px;
+                }
+
+                h3 {
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+
+            .tecno {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                margin-left: 10px;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+                div {
+                    h3 {
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                }
+            }
+        }
+
+        .caja-2 {
+            .zapatillas {
+                div {
+                    text-align: center;
+                    border: 2px solid white;
+                    width: 150px;
+                    padding: 5px;
+
+                    img {
+                        width: 100%;
+                        height: 150px;
+                    }
+
+                    h2 {
+                        font-size: 15px;
+                        font-family: Arial, Helvetica;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        font-size: 12px;
+                        color: #6c6c6d;
+                        font-family: Arial, Helvetica;
+                        font-weight: 700;
+                        margin-top: 20px;
+                    }
+
+                    h4 {
+                        font-size: 12px;
+                        color: black;
+                        font-family: Arial, Helvetica;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .Productos {
+        div {
+            border: 2px white solid;
+            width: 250px;
+            height: 450px;
+            text-align: center;
+            margin: 50px;
+
+            img {
+                width: 100%;
+                height: 270px;
+            }
+        }
+    }
+
+    form {
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 175px) !important;
+            grid-template-rows: repeat(4, 100px);
+            gap: 0 0px;
+            margin-left: 0px;
+            margin-top: 30px;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 10px;
+                width: 150px;
+
+                input {
+                    height: auto;
+                    font-size: 15px;
+                    font-family: Helvetica, Arial, sans-serif;
+                    color: white;
+                    font-weight: 400;
+                    width: 130px;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+
+                label {
+                    margin: 10px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    font-family: Arial, Helvetica;
+                }
+            }
+        }
+
+    }
+
+    .comunidad {
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Alfa Slab One", serif;
+        }
+
+        p {
+            font-size: 15px;
+            margin-right: 10px;
+        }
+    }
+
+    .terminos {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        margin: 10px;
+    }
+
+    .enviar {
+        input {
+            background-color: #111;
+            color: #fff;
+            font-size: 12px;
+            font-family: Arial, Helvetica;
+            font-weight: 600;
+            width: 130px;
+            height: 30px;
+        }
+    }
+
+    .contraseña {
+        padding-top: 15px;
+    }
+}
