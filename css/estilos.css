@@ -177,6 +177,7 @@ header .allstar a {
   width: 400px;
   padding: 10px;
   margin: 20px;
+  transition: 1s;
 }
 .caja .caja-2 .zapatillas div img {
   width: 100%;
@@ -214,6 +215,13 @@ header .allstar a {
   border-radius: 999px;
   padding: 10px;
   margin-top: 10px;
+  transition: 1s;
+}
+.caja .caja-2 .zapatillas div:hover {
+  transform: scale(1.1);
+  box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
 }
 
 .nosotros-1 {
@@ -308,9 +316,10 @@ header .allstar a {
 .Productos div {
   border: 2px white solid;
   width: 400px;
-  height: 600px;
+  height: 640px;
   text-align: center;
   margin: 50px;
+  transition: 1s;
 }
 .Productos div img {
   width: 100%;
@@ -349,6 +358,12 @@ header .allstar a {
   border-radius: 999px;
   padding: 10px;
   margin-top: 10px;
+}
+.Productos div:hover {
+  transform: scale(1.1);
+  box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
 }
 .Productos .productos-c img {
   width: 100%;
@@ -403,7 +418,8 @@ header .allstar a {
   border: 2px solid white;
   width: 400px;
   padding: 10px;
-  margin: 20px;
+  margin-bottom: 50px;
+  transition: 1s;
 }
 .zapatillas div img {
   width: 100%;
@@ -441,6 +457,12 @@ header .allstar a {
   border-radius: 999px;
   padding: 10px;
   margin-top: 10px;
+}
+.zapatillas div:hover {
+  transform: scale(1.1);
+  box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
 }
 
 .calzado {
@@ -482,13 +504,14 @@ header .allstar a {
 .Productos-t div {
   border: 2px white solid;
   width: 435px;
-  height: 650px;
+  height: 660px;
   text-align: center;
-  margin: 50px;
+  transition: 1s;
+  margin-bottom: 50px;
 }
 .Productos-t div img {
   width: 100%;
-  height: 480px;
+  height: 450px;
 }
 .Productos-t div p {
   color: #9e3500;
@@ -522,6 +545,12 @@ header .allstar a {
   border-radius: 999px;
   padding: 10px;
   margin-top: 10px;
+}
+.Productos-t div:hover {
+  transform: scale(1.1);
+  box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
 }
 
 .comunidad {
