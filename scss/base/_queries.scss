@@ -101,40 +101,6 @@
     margin-top: 30px;
 }
 
-.nosotros-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 20px;
-
-    .nosotros-2 {
-        margin-right: 50px;
-        background-color: white;
-        width: 500px;
-        font-size: 30px;
-        font-family: "Poetsen One", sans-serif;
-        font-weight: 600;
-        text-align: center;
-        padding: 5px;
-        border-radius: 20px;
-        margin-top: 0px;
-    }
-
-    .nosotros-3 {
-        font-size: 13px;
-        color: white;
-        border: 2px rgb(255, 255, 255);
-        width: 350px;
-        height: 400px;
-        text-align: center;
-
-        img {
-            width: 110px;
-            height: 80px;
-        }
-    }
-}
 
 @media screen and (max-width: 761px) {
     .fondo {
@@ -242,65 +208,36 @@
             }
         }
     }
-
-    .nosotros-1 {
-        .nosotros-3 {
-            margin-left: 40px;
-            font-size: 13px;
-            color: white;
-            border: 2px rgb(255, 255, 255);
-            width: 350px;
-            height: 650px;
-            text-align: center;
-            padding: 0px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .nosotros-2 {
-            margin-right: 0px;
-            background-color: white;
-            width: 100%;
-            font-size: 15px;
-            font-family: "Poetsen One", sans-serif;
-            font-weight: 600;
-            text-align: center;
-            padding: 3px;
-            border-radius: 20px;
-            margin-top: 0px;
-        }
-    }
-
-    .maps {
-        div {
-            iframe {
-                width: 200px;
-                height: 150px;
-                margin-top: 30px;
-                align-items: center;
-            }
-        }
-    }
-
-    .iconos {
-        .iconos-1 {
-            a {
-                width: 40px;
-                height: 40px;
-            }
-        }
-
-        .iconos-2 {
-            a {
-                text-decoration: none;
-                color: white;
-                font-family: "Poetsen One", sans-serif;
-                font-weight: 300;
-                font-size: 10px;
-            }
+.maps {
+    div {
+        iframe {
+            width: 200px;
+            height: 150px;
+            margin-top: 30px;
+            align-items: center;
         }
     }
 }
+
+.iconos {
+    .iconos-1 {
+        a {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .iconos-2 {
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 300;
+            font-size: 10px;
+        }
+    }
+}
+
 
 @media screen and (max-width: 655px) {
     .derechos {
@@ -488,8 +425,8 @@
 
     .allstar {
         img {
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 20px;
             margin-left: 50px;
             margin-top: 5px;
         }
@@ -506,30 +443,33 @@
             }
         }
     }
-
-    .nosotros h2 {
-        text-align: center;
-        font-size: 25px;
-        color: white;
-        margin: 40px;
-    }
 }
 
 @media screen and (max-width: 400px) {
-    .home {
-        h3 {
-            margin-left: 10px;
-            font-size: 17px;
-        }
+    .whatsapp {
+        position: fixed;
+        right: 50px;
+        bottom: 60px;
+        width: 10px;
+        height: 10px;
+    }
 
-        p {
-            margin-top: 20px;
+    .menu {
+        .home {
+            h3 {
+                margin-left: 10px;
+                font-size: 17px;
+            }
 
-            a {
-                text-decoration: none;
-                color: black;
-                margin-left: 15px;
-                font-size: 15px;
+            p {
+                margin-top: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 15px;
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -709,4 +649,5 @@
     .contraseña {
         padding-top: 15px;
     }
+}
 }

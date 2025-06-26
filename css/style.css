@@ -342,11 +342,6 @@
     align-items: center;
 }
 
-.nosotros-1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .nosotros-3 h2{
     font-family: "Poetsen One", sans-serif;
@@ -1214,7 +1209,7 @@
 }
 
 @media screen and (max-width: 400px){
-    .home p{
+.home p{
     margin-top: 20px;
 }
 

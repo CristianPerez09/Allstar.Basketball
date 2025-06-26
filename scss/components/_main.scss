@@ -188,8 +188,9 @@
         a {
             text-decoration: none;
             color: black;
-
-            .nosotros-2 {
+        }
+    }
+    .nosotros-2 {
                 width: 600px;
                 margin-right: 50px;
                 background-color: white;
@@ -201,13 +202,8 @@
                 border-radius: 20px;
                 margin-top: 30px;
             }
-        }
-    }
-
     .maps {
-
         div {
-
             iframe {
                 margin-top: 50px;
                 align-items: center;
