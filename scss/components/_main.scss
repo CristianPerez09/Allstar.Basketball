@@ -1,22 +1,22 @@
 //? iNDEX
 .btn-secondary {
-    background-color: black;
-    color: white;
+    background-color: $color-primario;
+    color: $color-terciario;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
+    @include flex(flex, space-between);
     margin-top: 40px;
 
     .home {
         p {
             margin-top: 20px;
+            font-weight: 600;
         }
 
         a {
             text-decoration: none;
-            color: black;
+            color: $color-letras;
             margin-left: 50px;
         }
 
@@ -24,6 +24,10 @@
             margin-left: 20px;
             font-size: 25px;
         }
+    }
+    .dropdown{
+        margin-top: 50px;
+        margin-right: 10px;
     }
 }
 
@@ -34,14 +38,11 @@
     .caja-1 {
         width: 250px;
         height: 100%;
-        border: 2px white solid;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        border: 2px $color-terciario solid;
+        @include direction (flex, column, space-between);
 
         .oportunidades {
-            display: flex;
-            flex-direction: column;
+            @include tecno (flex, column);
             margin-left: 10px;
             font-weight: 500;
             border-bottom: 2px solid rgba(0, 0, 0, 0.349);
@@ -56,8 +57,7 @@
             }
 
             .oportunidades-1 {
-                display: flex;
-                justify-content: space-between;
+                @include flex(flex, space-between);
                 margin: 10px;
 
                 label {
@@ -72,10 +72,8 @@
                 }
             }
         }
-
         .tecno {
-            display: flex;
-            flex-direction: column;
+            @include tecno(flex, column);
             margin-top: 20px;
             margin-left: 10px;
             font-weight: 600;
@@ -89,19 +87,20 @@
         }
     }
 
+
+
     .caja-2 {
         width: 100%;
         height: 100%;
-        border: 2px white solid;
+        border: 2px $color-terciario solid;
 
         .zapatillas {
-            display: flex;
-            justify-content: space-evenly;
+            @include flex (flex, space-evenly);
             margin: 20px;
 
             div {
                 text-align: center;
-                border: 2px solid white;
+                border: 2px solid $color-terciario;
                 width: 400px;
                 padding: 10px;
                 margin: 20px;
@@ -112,7 +111,7 @@
                 }
 
                 p {
-                    color: #9e3500;
+                    color: $color-tarjeta;
                     margin-bottom: 5px;
                     font-weight: 700;
                     font-size: 15px;
@@ -128,7 +127,7 @@
 
                 h3 {
                     font-size: 15px;
-                    color: #6c6c6d;
+                    color: $titulo-tarjeta;
                     font-family: Arial, Helvetica;
                     font-weight: 700;
                     margin-top: 20px;
@@ -136,14 +135,14 @@
 
                 h4 {
                     font-size: 15px;
-                    color: black;
+                    color: $color-letras;
                     font-family: Arial, Helvetica;
                     font-weight: 700;
                 }
 
                 button {
-                    background-color: black;
-                    color: white;
+                    background-color: $color-primario;
+                    color: $color-terciario;
                     border-radius: 999px;
                     padding: 10px;
                     margin-top: 10px;
@@ -163,12 +162,10 @@
     width: 100%;
     height: 1000px;
     margin-bottom: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include align(flex, space-around, center);
 
     .nosotros-3 {
-        color: white;
+        color: $color-terciario;
         border: 2px rgb(255, 255, 255);
         width: 600px;
         height: 600px;
@@ -187,19 +184,19 @@
 
         a {
             text-decoration: none;
-            color: black;
+            color: $color-letras;
 
             h3{
                 width: 600px;
                 margin-right: 50px;
-                background-color: white;
+                background-color: $color-terciario;
                 font-size: 30px;
                 font-family: "Poetsen One", sans-serif;
                 font-weight: 600;
                 text-align: center;
                 padding: 5px;
                 border-radius: 20px;
-                margin-top: 30px;
+                margin-top: 10px;
             }
         }
     }
@@ -213,18 +210,15 @@
     }
 
     .iconos {
-        display: flex;
-        justify-content: space-around;
+        @include flex (flex, space-around);
 
         .iconos-1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+            @include direction (flex, column, space-around);
 
             a {
                 img {
-                    background-color: white;
-                    border: 2px solid white;
+                    background-color: $color-terciario;
+                    border: 2px solid $color-terciario;
                     border-radius: 999px;
                     padding: 8px;
                     margin: 10px;
@@ -233,9 +227,7 @@
         }
 
         .iconos-2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+            @include direction (flex, column, space-around);
 
             a {
                 text-decoration: none;
@@ -257,9 +249,7 @@
 }
 
 .Productos {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
+    @include flex (flex, space-around);
 
     div {
         border: 2px white solid;
@@ -274,7 +264,7 @@
         }
 
         p {
-            color: #9e3500;
+            color: $color-tarjeta;
             margin-top: 15px;
             font-weight: 700;
             font-size: 15px;
@@ -290,7 +280,7 @@
 
         h3 {
             font-size: 15px;
-            color: #6c6c6d;
+            color: $titulo-tarjeta;
             font-family: Arial, Helvetica;
             font-weight: 700;
             margin-top: 20px;
@@ -298,7 +288,7 @@
 
         h4 {
             font-size: 15px;
-            color: black;
+            color: $color-letras;
             font-family: Arial, Helvetica;
             font-weight: 700;
             margin-top: 5px;
@@ -329,8 +319,7 @@
 //? MUJER / HOMBRE
 
 .sec-mujer {
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center);
 
     img {
         width: 50%;
@@ -362,15 +351,14 @@
         font-weight: 600;
         margin-top: 10px;
         background-color: black;
-        color: white;
+        color: $color-terciario;
         border-radius: 999px;
         padding: 10px;
     }
 }
 
 .zapatillas {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex (flex, space-evenly);
     margin: 20px;
 
     div {
@@ -386,7 +374,7 @@
         }
 
         p {
-            color: #9e3500;
+            color: $color-tarjeta;
             margin-bottom: 5px;
             font-weight: 700;
             font-size: 15px;
@@ -402,7 +390,7 @@
 
         h3 {
             font-size: 15px;
-            color: #6c6c6d;
+            color: $titulo-tarjeta;
             font-family: Arial, Helvetica;
             font-weight: 700;
             margin-top: 20px;
@@ -410,13 +398,13 @@
 
         h4 {
             font-size: 15px;
-            color: black;
+            color: $color-letras;
             font-family: Arial, Helvetica;
             font-weight: 700;
         }
 
         button {
-            background-color: black;
+            background-color: $color-letras;
             color: white;
             border-radius: 999px;
             padding: 10px;
@@ -433,12 +421,10 @@
 }
 
 .sec-mujer1 {
-    display: flex;
-    flex-direction: column;
+    @include tecno (flex, column);
 
     div {
-        display: flex;
-        justify-content: space-around;
+        @include flex (flex, space-around);
 
         img {
             width: 50%;
@@ -448,8 +434,7 @@
     }
 
     div {
-        display: flex;
-        justify-content: space-around;
+        @include flex (flex, space-around);
 
         a {
             margin-top: 15px;
@@ -461,8 +446,7 @@
 }
 
 .Productos-t {
-    display: flex;
-    justify-content: space-around;
+    @include flex (flex, space-around);
     margin: 20px;
 
     div {
@@ -478,7 +462,7 @@
         }
 
         p {
-            color: #9e3500;
+            color: $color-tarjeta;
             margin-top: 10px;
             font-weight: 700;
             font-size: 15px;
@@ -494,7 +478,7 @@
 
         h3 {
             font-size: 15px;
-            color: #6c6c6d;
+            color: $titulo-tarjeta;
             font-family: Arial, Helvetica;
             font-weight: 700;
             margin-top: 20px;
@@ -503,13 +487,13 @@
 
         h4 {
             font-size: 15px;
-            color: black;
+            color: $color-letras;
             font-family: Arial, Helvetica;
             font-weight: 700;
         }
 
         button {
-            background-color: black;
+            background-color: $color-letras;
             color: white;
             border-radius: 999px;
             padding: 10px;
@@ -553,9 +537,7 @@ form {
         margin-top: 30px;
 
         .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include direction (flex, column, center);
             margin: 10px;
 
             label {
@@ -568,7 +550,7 @@ form {
                 height: auto;
                 font-size: 15px;
                 font-family: Helvetica, Arial, sans-serif;
-                color: #3f3f40;
+                color: $color-formulario;
                 font-weight: 400;
                 width: 100%;
                 padding: 10px;
@@ -578,7 +560,7 @@ form {
             select {
                 font-size: 15px;
                 font-family: Helvetica, Arial, sans-serif;
-                color: #3f3f40;
+                color: $color-formulario;
                 font-weight: 400;
                 width: 100%;
                 padding: 10px;
@@ -586,13 +568,12 @@ form {
             }
         }
         .enviar {
-                display: flex;
-                flex-direction: row-reverse;
+            @include tecno (flex, row-reverse);
                 padding-top: 20px;
 
                 input {
-                    background-color: #111;
-                    color: #fff;
+                    background-color: $color-primario;
+                    color: $color-terciario;
                     cursor: pointer;
                     font-family: Arial, Helvetica;
                     font-weight: 600;

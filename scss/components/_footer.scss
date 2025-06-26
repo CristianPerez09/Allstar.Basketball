@@ -6,26 +6,28 @@
 
 .fondo{
     font-family: "Ancizar Serif", serif;
-    background-color:#111;
+    background-color: $color-primario;
     width: 100%;
     height: 250px;
-    color: rgba(255, 255, 255, 0);
-    display: flex;
-    justify-content: space-between;
+    color: $color-footer;
+    @include flex (flex, space-between);
     padding-top: 20px;
     div{
 
         h2{
             margin-left: 20px;
             font-size: 20px;
-            color: rgba(255, 255, 255, 0.705);
+            color: $color-secundario;
         }
         
         ul{
             list-style: none;
             margin: 20px;
-            color: rgb(151, 151, 151);
+            color: $letras-footer;
             padding-left: 0 !important;
+        }
+        a{
+            padding-left: 10px;
         }
     }
     .pedidos{
@@ -36,7 +38,7 @@
     }
         a{
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.705);
+            color: $color-secundario;
     }
 }
 }
@@ -48,13 +50,11 @@
     background-color: #111;
     width: 100%;
     color: rgb(151, 151, 151);
-    display: flex;
-    justify-content: space-between;
+    @include flex (flex, space-between);
     text-decoration: none;
     border-top: 1px solid rgba(170, 170, 170, 0.342);
     .derechos-1 {
-    display: flex;
-    justify-content: space-around;
+    @include flex (flex, space-around);
     margin: 10px;
 
     a {
@@ -67,14 +67,12 @@
     img {
         width: 30px;
         height: 30px;
-        margin-left: 20px;
         margin-top: 5px;
     }
 }
 
 .derechos-2 {
-    display: flex;
-    justify-content: space-between;
+    @include flex (flex, space-between);
     text-decoration: none;
 
     a {

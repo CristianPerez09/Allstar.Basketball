@@ -3,6 +3,38 @@ $color-primario:#111;
 $color-secundario:#ebebebd8;
 $color-terciario:white;
 $color-footer:rgba(255, 255, 255, 0);
+$color-letras: black;
+$letras-footer: rgba(255, 255, 255, 0.397);
+$color-tarjeta: #9e3500;
+$titulo-tarjeta: #6c6c6d;
+$color-formulario: #3f3f40;
 
+//? MIXINS
 
-//? 
+@mixin flex ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}
+
+@mixin tecno($flex, $direction){
+    display: $flex;
+    flex-direction: $direction;
+}
+
+@mixin align($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin direction ($flex, $direction, $justify){
+    display: $flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin items ($flex, $direction, $align){
+        display: $flex;
+        flex-direction: $direction;
+        align-items: $align
+}

@@ -17,9 +17,7 @@
         margin-top: 30px;
 
         .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include direction (flex, column, center);
             margin: 10px;
             width: 400px;
 
@@ -55,9 +53,7 @@
 
 @media screen and (max-width: 1139px) {
     .zapatillas {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include direction (flex, column, space-evenly);
         margin: 20px;
     }
 
@@ -80,16 +76,15 @@
 
 @media screen and (max-width:1000px) {
     .Productos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include direction (flex, column, center);
+        margin-bottom: 10px;
 
         div {
             border: 2px white solid;
             width: 400px;
             height: 450px;
             text-align: center;
-            margin: 10px
+            margin: 0px;
         }
     }
     .grid-container {
@@ -102,17 +97,16 @@
 }
 
 .nosotros-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include direction (flex, column, center);
     margin-top: 0px;
     padding: 0px;
 
     .nosotros-3{
         font-size: 13px;
-        color: white;
+        color: $color-terciario;
         border: 2px rgb(255, 255, 255);
         width: 350px;
+        height: 620px;
         text-align: center;
         margin-left: 40px;
         padding: 30px;
@@ -123,7 +117,7 @@
         a{
             h3{
                 margin-right: 50px;
-                background-color: white;
+                background-color: $color-terciario;
                 width: 300px;
                 font-size: 20px;
                 font-family: "Poetsen One", sans-serif;
@@ -159,11 +153,11 @@
         .iconos-2{
             a{
                 text-decoration: none;
-                color: white;
+                color: $color-terciario;
                 font-family: "Poetsen One", sans-serif;
                 font-weight: 300;
                 font-size: 10px;
-                padding-left: 30px;
+                padding-left: 15px;
                 padding-top: 15px;
             }
         }
@@ -176,13 +170,11 @@
 @media screen and (max-width: 761px) {
     .fondo {
         font-family: "Ancizar Serif", serif;
-        background-color: #111;
+        background-color: $color-primario;
         width: 100%;
         height: 100%;
-        color: rgba(255, 255, 255, 0);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        color: $color-footer;
+        @include direction (flex, column, space-between);
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 20px;
@@ -213,9 +205,7 @@
     }
 
     .zapatillas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include items (flex, column, center);
         margin: 20px;
     }
 
@@ -241,15 +231,16 @@
                 font-family: "Poetsen One", sans-serif;
                 font-weight: 200;
                 margin-left: 30px;
-                font-size: 10px;
+                font-size: 8px;
             }
         }
     }
 
     .Productos-t {
+        @include items (flex, column, center);
         div {
             p {
-                color: #9e3500;
+                color: $color-tarjeta;
                 margin-top: 10px;
                 font-weight: 700;
                 font-size: 15px;
@@ -265,7 +256,7 @@
 
             h3 {
                 font-size: 10px;
-                color: #6c6c6d;
+                color: $titulo-tarjeta;
                 font-family: Arial, Helvetica;
                 font-weight: 700;
                 margin-top: 20px;
@@ -291,7 +282,7 @@
     .iconos-2 {
         a {
             text-decoration: none;
-            color: white;
+            color: $color-terciario;
             font-family: "Poetsen One", sans-serif;
             font-weight: 300;
             font-size: 10px;
@@ -306,7 +297,7 @@
         text-align: center;
         background-color: #111;
         width: 100%;
-        color: rgb(151, 151, 151);
+        color: $color-formulario;
         text-decoration: none;
         border-top: 1px solid rgba(170, 170, 170, 0.342);
         display: flex;
@@ -337,9 +328,7 @@
         margin-top: 30px;
 
         .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include direction (flex, column, center);
             margin: 10px;
             width: 200px;
         }
@@ -368,9 +357,7 @@
             width: 175px;
             height: 100%;
             border: 2px white solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include direction (flex, column, space-between);
         }
 
         .caja-2 {
@@ -391,9 +378,7 @@
     }
 
     .Productos-t {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include direction (flex, column, center);
         margin: 20px;
 
         div {
@@ -443,9 +428,7 @@
         width: 100px;
         height: 100%;
         border: 2px white solid;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include direction (flex, column, space-between);
     }
 
     .zapatillas {
@@ -459,7 +442,7 @@
 
 .dropdown{
     margin-top: 40px;
-    margin-right: 10px;
+    margin-left: 10px !important;
 }
 
 .derechos {
@@ -468,23 +451,18 @@
         background-color: #111;
         width: 100%;
         color: rgb(151, 151, 151);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include direction (flex, column, space-between);
         text-decoration: none;
         border-top: 1px solid rgba(170, 170, 170, 0.342);
 
         .derechos-1 {
-            display: flex;
-            justify-content: center;
+            @include flex (flex, center);
             padding-right: 20px;
             margin: 10px;
         }
 
         .derechos-2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include direction (flex, column, space-between);
             text-decoration: none;
         }
     }
@@ -545,13 +523,10 @@
             width: 155px;
             height: 100%;
             border: 2px white solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include direction (flex, column, space-between);
 
             .oportunidades {
-                display: flex;
-                flex-direction: column;
+                @include tecno (flex, column);
                 margin-left: 10px;
                 font-weight: 500;
                 border-bottom: 2px solid rgba(0, 0, 0, 0.349);
@@ -571,8 +546,7 @@
             }
 
             .tecno {
-                display: flex;
-                flex-direction: column;
+                @include tecno (flex, column);
                 margin-top: 20px;
                 margin-left: 10px;
                 font-weight: 600;
@@ -610,7 +584,7 @@
 
                     h3 {
                         font-size: 12px;
-                        color: #6c6c6d;
+                        color: $titulo-tarjeta;
                         font-family: Arial, Helvetica;
                         font-weight: 700;
                         margin-top: 20px;
@@ -618,7 +592,7 @@
 
                     h4 {
                         font-size: 12px;
-                        color: black;
+                        color: $color-letras;
                         font-family: Arial, Helvetica;
                         font-weight: 700;
                     }
@@ -652,9 +626,7 @@
             margin-top: 30px;
 
             .container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include direction (flex, column, center);
                 margin: 10px;
                 width: 150px;
 
@@ -715,5 +687,13 @@
         padding-top: 15px;
     }
 }
+}
+.fondo{
+    .pedidos{
+        p{
+            margin: 5px;
+            margin-bottom: 20px;
+        }
+    }
 }
 }

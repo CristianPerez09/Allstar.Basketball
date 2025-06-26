@@ -2,8 +2,8 @@ header {
 
     .titulo {
         font-family: "Abril Fatface";
-        color: white;
-        background-color: #111;
+        color: $color-terciario;
+        background-color: $color-primario;
 
         h1 {
             font-family: Arial, Helvetica;
@@ -12,6 +12,7 @@ header {
             margin-left: 20px;
             font-size: 15px;
             padding: 5px;
+            font-weight: 600;
         }
     }
 
@@ -19,7 +20,7 @@ header {
         display: flex;
         justify-content: space-between;
         list-style: none;
-        background-color: #ebebebd8;
+        background-color: $color-secundario;
             ul{
                 display: flex;
                 margin-top: 15px;
@@ -37,7 +38,7 @@ header {
             }
             a{
                 text-decoration: none;
-                color: black;
+                color: $color-letras;
                 font-size: 13px;
                 font-family: Arial, Helvetica;
                 margin-left: 5px;
