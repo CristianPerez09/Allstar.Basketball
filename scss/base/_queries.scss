@@ -76,6 +76,8 @@
     }
 }
 
+
+
 @media screen and (max-width:1000px) {
     .Productos {
         display: flex;
@@ -90,9 +92,7 @@
             margin: 10px
         }
     }
-}
-
-.grid-container {
+    .grid-container {
     display: grid;
     grid-template-columns: 1, 900px;
     grid-template-rows: repeat(4, 100px);
@@ -100,6 +100,77 @@
     margin-left: 30px;
     margin-top: 30px;
 }
+
+.nosotros-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px;
+
+    .nosotros-3{
+        font-size: 13px;
+        color: white;
+        border: 2px rgb(255, 255, 255);
+        width: 350px;
+        text-align: center;
+        margin-left: 40px;
+        padding: 30px;
+        img{
+            width: 110px;
+            height: 80px;
+        }
+        a{
+            h3{
+                margin-right: 50px;
+                background-color: white;
+                width: 300px;
+                font-size: 20px;
+                font-family: "Poetsen One", sans-serif;
+                font-weight: 600;
+                text-align: center;
+                padding: 5px;
+                border-radius: 20px;
+                margin-top: 0px;
+            }
+        }
+    }
+    
+.maps {
+        margin-left: 30px;
+    div {
+        iframe {
+            width: 200px;
+            height: 150px;
+            margin-top: 50px !important;
+            align-items: center;
+        }
+    }
+    .iconos{
+        .iconos-1{
+            a{
+                margin: 5px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        .iconos-2{
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: "Poetsen One", sans-serif;
+                font-weight: 300;
+                font-size: 10px;
+                padding-left: 30px;
+                padding-top: 15px;
+            }
+        }
+    }
+}
+}
+
 
 
 @media screen and (max-width: 761px) {
@@ -208,16 +279,6 @@
             }
         }
     }
-.maps {
-    div {
-        iframe {
-            width: 200px;
-            height: 150px;
-            margin-top: 30px;
-            align-items: center;
-        }
-    }
-}
 
 .iconos {
     .iconos-1 {
@@ -396,7 +457,12 @@
         }
     }
 
-    .derechos {
+.dropdown{
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.derechos {
         font-size: 15px;
         text-align: center;
         background-color: #111;
@@ -408,7 +474,7 @@
         text-decoration: none;
         border-top: 1px solid rgba(170, 170, 170, 0.342);
 
-        .dereches-1 {
+        .derechos-1 {
             display: flex;
             justify-content: center;
             padding-right: 20px;
@@ -425,10 +491,10 @@
 
     .allstar {
         img {
-            width: 20px;
-            height: 20px;
+            width: 30px !important;
+            height: 30px !important;
             margin-left: 50px;
-            margin-top: 5px;
+            margin-top: 10px;
         }
 
         ul {
@@ -611,7 +677,6 @@
                 }
             }
         }
-
     }
 
     .comunidad {
@@ -649,5 +714,6 @@
     .contraseña {
         padding-top: 15px;
     }
+}
 }
 }

@@ -242,7 +242,7 @@ header .allstar a {
   text-decoration: none;
   color: black;
 }
-.nosotros-1 .nosotros-2 {
+.nosotros-1 .nosotros-3 a h3 {
   width: 600px;
   margin-right: 50px;
   background-color: white;
@@ -745,17 +745,73 @@ form .grid-container .enviar input {
     text-align: center;
     margin: 10px;
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1, 900px;
+    grid-template-rows: repeat(4, 100px);
+    gap: 0 18px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .nosotros-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .nosotros-1 .nosotros-3 {
+    font-size: 13px;
+    color: white;
+    border: 2px rgb(255, 255, 255);
+    width: 350px;
+    text-align: center;
+    margin-left: 40px;
+    padding: 30px;
+  }
+  .nosotros-1 .nosotros-3 img {
+    width: 110px;
+    height: 80px;
+  }
+  .nosotros-1 .nosotros-3 a h3 {
+    margin-right: 50px;
+    background-color: white;
+    width: 300px;
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 0px;
+  }
+  .nosotros-1 .maps {
+    margin-left: 30px;
+  }
+  .nosotros-1 .maps div iframe {
+    width: 200px;
+    height: 150px;
+    margin-top: 50px !important;
+    align-items: center;
+  }
+  .nosotros-1 .maps .iconos .iconos-1 a {
+    margin: 5px;
+  }
+  .nosotros-1 .maps .iconos .iconos-1 a img {
+    width: 40px;
+    height: 40px;
+  }
+  .nosotros-1 .maps .iconos .iconos-2 a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: 1, 900px;
-  grid-template-rows: repeat(4, 100px);
-  gap: 0 18px;
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-@media screen and (max-width: 761px) {
+@media screen and (max-width: 1000px) and (max-width: 761px) {
   .fondo {
     font-family: "Ancizar Serif", serif;
     background-color: #111;
@@ -835,12 +891,6 @@ form .grid-container .enviar input {
     font-family: Arial, Helvetica;
     font-weight: 700;
   }
-  .maps div iframe {
-    width: 200px;
-    height: 150px;
-    margin-top: 30px;
-    align-items: center;
-  }
   .iconos .iconos-1 a {
     width: 40px;
     height: 40px;
@@ -853,7 +903,7 @@ form .grid-container .enviar input {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 761px) and (max-width: 655px) {
+@media screen and (max-width: 1000px) and (max-width: 761px) and (max-width: 655px) {
   .derechos {
     font-size: 10px;
     text-align: center;
@@ -891,7 +941,7 @@ form .grid-container .enviar input {
     width: 200px;
   }
 }
-@media screen and (max-width: 761px) and (max-width: 614px) {
+@media screen and (max-width: 1000px) and (max-width: 761px) and (max-width: 614px) {
   .zapatillas div {
     text-align: center;
     border: 2px solid white;
@@ -958,7 +1008,7 @@ form .grid-container .enviar input {
     height: 320px;
   }
 }
-@media screen and (max-width: 761px) and (max-width: 503px) {
+@media screen and (max-width: 1000px) and (max-width: 761px) and (max-width: 503px) {
   .caja-1 {
     width: 100px;
     height: 100%;
@@ -973,6 +1023,10 @@ form .grid-container .enviar input {
     width: 200px;
     padding: 5px;
   }
+  .dropdown {
+    margin-top: 40px;
+    margin-right: 10px;
+  }
   .derechos {
     font-size: 15px;
     text-align: center;
@@ -985,7 +1039,7 @@ form .grid-container .enviar input {
     text-decoration: none;
     border-top: 1px solid rgba(170, 170, 170, 0.342);
   }
-  .derechos .dereches-1 {
+  .derechos .derechos-1 {
     display: flex;
     justify-content: center;
     padding-right: 20px;
@@ -998,10 +1052,10 @@ form .grid-container .enviar input {
     text-decoration: none;
   }
   .allstar img {
-    width: 20px;
-    height: 20px;
+    width: 30px !important;
+    height: 30px !important;
     margin-left: 50px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   .allstar ul li a {
     text-decoration: none;
@@ -1011,7 +1065,7 @@ form .grid-container .enviar input {
     margin-left: 5px;
   }
 }
-@media screen and (max-width: 761px) and (max-width: 400px) {
+@media screen and (max-width: 1000px) and (max-width: 761px) and (max-width: 400px) {
   .whatsapp {
     position: fixed;
     right: 50px;
