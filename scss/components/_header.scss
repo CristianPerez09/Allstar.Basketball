@@ -62,14 +62,20 @@ header {
 
 .bi-bag-check-fill{
     margin-left: 10px;
+    transition: 1s;
 }
 
 .nav-item li a{
     font-size: 40px;
+    
 }
 
 .logo{
     width: 120px;
     height: 80px;
+    transition: 1s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
