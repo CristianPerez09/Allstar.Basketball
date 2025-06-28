@@ -185,6 +185,12 @@ header .allstar a {
   transition: 1s;
   margin-bottom: 30px;
 }
+.caja .caja-2 .zapatillas div:hover {
+  transform: scale(1.1);
+  box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+}
 .caja .caja-2 .zapatillas div img {
   width: 100%;
   height: 350px;
@@ -222,12 +228,6 @@ header .allstar a {
   padding: 10px;
   margin-top: 10px;
   transition: 1s;
-}
-.caja .caja-2 .zapatillas div:hover {
-  transform: scale(1.1);
-  box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
 }
 
 .nosotros-1 {
@@ -417,6 +417,11 @@ header .allstar a {
   color: white;
   border-radius: 999px;
   padding: 10px;
+  transition: 1s;
+}
+.sec-mujer-titulo button:hover {
+  transform: scale(1.1);
+  background-color: #700000;
 }
 
 .zapatillas {
