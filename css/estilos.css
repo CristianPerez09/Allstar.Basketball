@@ -317,6 +317,10 @@ header .allstar a {
   text-align: center;
   padding: 5px;
   margin-top: 30px;
+  transition: 1s;
+}
+.nosotros-P:hover {
+  transform: scale(1.1);
 }
 
 .Productos {
