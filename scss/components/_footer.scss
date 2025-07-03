@@ -2,6 +2,10 @@
     position: fixed;
     right: 30px;
     bottom: 60px;
+    transition: 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
 }
 
 .fondo{
@@ -32,6 +36,14 @@
     }
     .iconos-footer{
         padding-right: 8px;
+            a{
+                img{
+                    transition: 1s;
+                        &:hover{
+                        transform: scale(1.1);
+            }
+                }
+            }
     }
     .pedidos{
 

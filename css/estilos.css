@@ -182,8 +182,8 @@ header .allstar a {
   width: 400px;
   padding: 10px;
   margin: 20px;
-  transition: 1s;
   margin-bottom: 30px;
+  transition: 1s;
 }
 .caja .caja-2 .zapatillas div:hover {
   transform: scale(1.1);
@@ -297,6 +297,10 @@ header .allstar a {
   border-radius: 999px;
   padding: 8px;
   margin: 10px;
+  transition: 1s;
+}
+.nosotros-1 .iconos .iconos-1 a img:hover {
+  transform: scale(1.1);
 }
 .nosotros-1 .iconos .iconos-2 {
   display: flex;
@@ -308,6 +312,10 @@ header .allstar a {
   color: white;
   font-family: "Poetsen One", sans-serif;
   font-weight: 300;
+}
+
+.animate__bounceInRight {
+  --animate-duration: 1.7s;
 }
 
 .nosotros-P {
@@ -664,6 +672,10 @@ form .grid-container .enviar input:hover {
   position: fixed;
   right: 30px;
   bottom: 60px;
+  transition: 1s;
+}
+.whatsapp:hover {
+  transform: scale(1.1);
 }
 
 .fondo {
@@ -692,6 +704,12 @@ form .grid-container .enviar input:hover {
 }
 .fondo .iconos-footer {
   padding-right: 8px;
+}
+.fondo .iconos-footer a img {
+  transition: 1s;
+}
+.fondo .iconos-footer a img:hover {
+  transform: scale(1.1);
 }
 .fondo .pedidos p {
   margin: 20px;
