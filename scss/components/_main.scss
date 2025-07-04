@@ -1,4 +1,4 @@
-//? iNDEX
+//? Destacados
 .btn-secondary {
     background-color: $color-primario;
     color: $color-terciario;
@@ -161,7 +161,7 @@
     }
 }
 
-//? NOSOTROS
+//? Bienvenidos
 
 .nosotros-1 {
     background-image: url(../img/nosotros-1.png);
@@ -217,6 +217,10 @@
             iframe {
                 margin-top: 50px;
                 align-items: center;
+                border-radius: 60px;
+                box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
+                    -webkit-box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
+                    -moz-box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
             }
         }
     }
@@ -260,40 +264,38 @@
 }
 
 .box{
-        width: 100%;
-        height: 100px;
-        margin-top: 80px;
+    height: 100px;
         h2{
-            top: 60px;
+            margin-top: 50px;
             left: 50%;
-            position: relative;
+            position: absolute;
             transform: translate(-50%, -50%);
             text-align: center;
             border-bottom: 5px solid black;
             overflow: hidden;
             animation: anim 5s linear forwards;
-            font-size: 60px;
+            font-size: 70px;
             font-family: "Poetsen One", sans-serif;
-    @keyframes anim{
+            @keyframes anim{
                 0%{
                     width: 0;
                     height: 0;
                 }
                 30%{
-                    width: 30%;
+                    width: 40%;
                     height: 0;
                 }
                 60%{
-                    width: 30%;
-                    height: 8%;
+                    width: 40%;
+                    height: 9%;
                 }
                 80%{
-                    width: 30%;
-                    height: 8%;
+                    width: 40%;
+                    height: 9%;
                 }
                 100%{
-                    width: 30%;
-                    height: 8%;
+                    width: 40%;
+                    height: 9%;
                 }
             }
         }
