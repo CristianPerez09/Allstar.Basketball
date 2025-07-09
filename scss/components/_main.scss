@@ -161,7 +161,7 @@
     }
 }
 
-//? Bienvenidos
+//? INDEX
 
 .nosotros-1 {
     background-image: url(../img/nosotros-1.png);
@@ -217,10 +217,29 @@
             iframe {
                 margin-top: 50px;
                 align-items: center;
-                border-radius: 60px;
                 box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
                     -webkit-box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
                     -moz-box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
+                        &:hover{
+                            animation: transformacion 4s;
+                        }
+                        @keyframes  transformacion {
+                            0%{
+                                border-radius: 0 0 0 0;
+                            }
+                            25%{
+                                border-radius: 25% 0 0 0;
+                            }
+                            50%{
+                                border-radius: 25% 25% 0 0;
+                            }
+                            75%{
+                                border-radius: 25% 25% 25% 0;
+                            }
+                            100%{
+                                border-radius: 25%;
+                            }
+                        }
             }
         }
     }
@@ -273,28 +292,29 @@
             text-align: center;
             border-bottom: 5px solid black;
             overflow: hidden;
-            animation: anim 5s linear forwards;
+            animation: anim 3s linear forwards;
             font-size: 70px;
             font-family: "Poetsen One", sans-serif;
-            @keyframes anim{
+            
+            @keyframes anim {
                 0%{
                     width: 0;
                     height: 0;
                 }
                 30%{
-                    width: 40%;
+                    width: 38%;
                     height: 0;
                 }
                 60%{
-                    width: 40%;
-                    height: 9%;
+                    width: 38%;
+                    height: 5%;
                 }
                 80%{
-                    width: 40%;
-                    height: 9%;
+                    width: 38%;
+                    height: 7%;
                 }
                 100%{
-                    width: 40%;
+                    width: 38%;
                     height: 9%;
                 }
             }

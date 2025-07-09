@@ -281,10 +281,29 @@ header .allstar a {
 .nosotros-1 .maps div iframe {
   margin-top: 50px;
   align-items: center;
-  border-radius: 60px;
   box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
+}
+.nosotros-1 .maps div iframe:hover {
+  animation: transformacion 4s;
+}
+@keyframes transformacion {
+  0% {
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    border-radius: 25% 0 0 0;
+  }
+  50% {
+    border-radius: 25% 25% 0 0;
+  }
+  75% {
+    border-radius: 25% 25% 25% 0;
+  }
+  100% {
+    border-radius: 25%;
+  }
 }
 .nosotros-1 .iconos {
   display: flex;
@@ -333,7 +352,7 @@ header .allstar a {
   text-align: center;
   border-bottom: 5px solid black;
   overflow: hidden;
-  animation: anim 5s linear forwards;
+  animation: anim 3s linear forwards;
   font-size: 70px;
   font-family: "Poetsen One", sans-serif;
 }
@@ -343,19 +362,19 @@ header .allstar a {
     height: 0;
   }
   30% {
-    width: 40%;
+    width: 38%;
     height: 0;
   }
   60% {
-    width: 40%;
-    height: 9%;
+    width: 38%;
+    height: 5%;
   }
   80% {
-    width: 40%;
-    height: 9%;
+    width: 38%;
+    height: 7%;
   }
   100% {
-    width: 40%;
+    width: 38%;
     height: 9%;
   }
 }
@@ -721,6 +740,11 @@ form .grid-container .enviar input:hover {
 .fondo div h2 {
   margin-left: 20px;
   font-size: 20px;
+  color: rgba(255, 255, 255, 0.397);
+  transition: 1s;
+}
+.fondo div h2:hover {
+  transform: scale(1.1);
   color: rgba(235, 235, 235, 0.8470588235);
 }
 .fondo div ul {
@@ -744,9 +768,15 @@ form .grid-container .enviar input:hover {
 .fondo .pedidos p {
   margin: 20px;
   font-size: 20px;
+  color: rgba(255, 255, 255, 0.397);
 }
 .fondo .pedidos a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.397);
+  transition: 1s;
+}
+.fondo .pedidos a:hover {
+  transform: scale(1.1);
   color: rgba(235, 235, 235, 0.8470588235);
 }
 
@@ -777,12 +807,13 @@ form .grid-container .enviar input:hover {
   height: 30px;
   margin-top: 5px;
 }
-.derechos .derechos-2 {
+
+.derechos-2 {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
 }
-.derechos .derechos-2 a {
+.derechos-2 a {
   font-size: 13px;
   margin: 20px;
   text-decoration: none;

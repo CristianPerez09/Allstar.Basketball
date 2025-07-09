@@ -21,7 +21,12 @@
         h2{
             margin-left: 20px;
             font-size: 20px;
-            color: $color-secundario;
+            color: $letras-footer;
+            transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    color: $color-secundario;
+                }
         }
         
         ul{
@@ -41,20 +46,25 @@
                     transition: 1s;
                         &:hover{
                         transform: scale(1.1);
-            }
+                        }
                 }
             }
     }
     .pedidos{
-
         p{
             margin: 20px;
             font-size: 20px;
+            color: $letras-footer;
     }
         a{
             text-decoration: none;
-            color: $color-secundario;
+            color: $letras-footer;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                color: $color-secundario;
     }
+}
 }
 }
 
@@ -85,7 +95,7 @@
         margin-top: 5px;
     }
 }
-
+}
 .derechos-2 {
     @include flex (flex, space-between);
     text-decoration: none;
@@ -96,5 +106,4 @@
         text-decoration: none;
         color: rgb(151, 151, 151);
     }
-}
 }
