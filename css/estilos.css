@@ -469,20 +469,23 @@ header .allstar a {
   font-weight: 400;
   margin-top: 10px;
 }
-.sec-mujer-titulo button {
+.sec-mujer-titulo a button {
   text-align: center;
-  font-size: 15px;
-  font-weight: 600;
-  margin-top: 10px;
-  background-color: black;
-  color: white;
+  border: 0;
+  background: linear-gradient(90deg, rgb(191, 0, 0) 0%, rgb(181, 0, 0) 50%, rgb(0, 0, 0) 100%);
   border-radius: 999px;
-  padding: 10px;
-  transition: 1s;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 4s;
 }
-.sec-mujer-titulo button:hover {
+.sec-mujer-titulo a button:hover {
   transform: scale(1.1);
-  background-color: #700000;
+}
+.sec-mujer-titulo a button span {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
 }
 
 .zapatillas {
@@ -543,7 +546,8 @@ header .allstar a {
 }
 
 .calzado {
-  margin: 50px;
+  margin-top: 50px;
+  padding: 60px;
   font-family: "Poetsen One", sans-serif;
   font-weight: 200;
   font-size: 25px;
@@ -583,8 +587,8 @@ header .allstar a {
   width: 435px;
   height: 670px;
   text-align: center;
-  transition: 1s;
   margin-bottom: 50px;
+  transition: 1s;
 }
 .Productos-t div:hover {
   transform: scale(1.1);

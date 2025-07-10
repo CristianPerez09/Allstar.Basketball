@@ -427,21 +427,26 @@
         margin-top: 10px;
     }
 
-    button {
-        text-align: center;
-        font-size: 15px;
-        font-weight: 600;
-        margin-top: 10px;
-        background-color: black;
-        color: $color-terciario;
-        border-radius: 999px;
-        padding: 10px;
-        transition: 1s;
-            &:hover{
-                transform: scale(1.1);
-                background-color: #700000;
-            }
-    }
+    a{
+        button {
+            text-align: center;
+            border: 0;
+            background: linear-gradient(90deg,rgba(191, 0, 0, 1) 0%, rgba(181, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+            border-radius: 999px;
+            color: #fff;
+            font-size: 18px;
+            padding: 15px;
+            cursor: pointer;
+            transition: 4s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                span{
+                    font-family: "Poetsen One", sans-serif;
+                    font-weight: 400;
+                }
+}
+}
 }
 
 .zapatillas {
@@ -508,7 +513,8 @@
 }
 
 .calzado {
-    margin: 50px;
+    margin-top: 50px;
+    padding: 60px;
     font-family: "Poetsen One", sans-serif;
     font-weight: 200;
     font-size: 25px;
@@ -548,14 +554,14 @@
         width: 435px;
         height: 670px;
         text-align: center;
-        transition: 1s;
         margin-bottom: 50px;
+        transition: 1s;
             &:hover{
         transform: scale(1.1);
         box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
         -webkit-box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
         -moz-box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
-    }
+            }
 
         img {
             width: 100%;
