@@ -178,7 +178,7 @@ header .allstar a {
 }
 .caja .caja-2 .zapatillas div {
   text-align: center;
-  border: 2px solid white;
+  border: 2px solid transparent;
   width: 400px;
   padding: 10px;
   margin: 20px;
@@ -529,14 +529,17 @@ header .allstar a {
   color: white;
 }
 
-.sec-mujer {
+.mujer .sec-mujer3 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 50px;
 }
-.sec-mujer img {
+.mujer .sec-mujer3 .sec-mujer-dia {
+  border-right: 2px solid white;
+}
+.mujer .sec-mujer3 img {
   width: 50%;
   height: 700px;
-  border-right: 5px solid white;
 }
 
 .sec-mujer-titulo {
@@ -644,30 +647,6 @@ header .allstar a {
   font-size: 25px;
 }
 
-.sec-mujer1 {
-  display: flex;
-  flex-direction: column;
-}
-.sec-mujer1 div {
-  display: flex;
-  justify-content: space-around;
-}
-.sec-mujer1 div img {
-  width: 50%;
-  height: 800px;
-  border-right: 5px solid white;
-}
-.sec-mujer1 div {
-  display: flex;
-  justify-content: space-around;
-}
-.sec-mujer1 div a {
-  margin-top: 15px;
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 200;
-  font-size: 20px;
-}
-
 .Productos-t {
   display: flex;
   justify-content: space-around;
@@ -726,6 +705,41 @@ header .allstar a {
   transition: 1s;
 }
 .Productos-t div button:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.sec-mujer1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-mujer1 .sec-mujer {
+  width: 100%;
+  height: 800px;
+  margin: 2px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.sec-mujer1 .sec-mujer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec-mujer1 .sec-mujer a {
+  text-decoration: none;
+}
+.sec-mujer1 .sec-mujer a h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
+  border-radius: 999px;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.397);
+  background-color: black;
+  padding: 5px 28px 5px;
+  transition: 1s;
+}
+.sec-mujer1 .sec-mujer a h3:hover {
   transform: scale(1.1);
   color: white;
 }
@@ -1070,6 +1084,53 @@ form .grid-container .enviar input:hover {
   }
 }
 @media screen and (max-width: 1000px) and (max-width: 761px) {
+  .mujer .sec-mujer3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .mujer .sec-mujer3 .sec-mujer-dia {
+    border-right: 2px solid white;
+  }
+  .mujer .sec-mujer3 img {
+    width: 50%;
+    height: 230px;
+  }
+  .sec-mujer1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .sec-mujer1 .sec-mujer {
+    width: 99%;
+    height: 500px;
+    margin: 0px;
+    position: relative;
+    margin-bottom: 5px;
+  }
+  .sec-mujer1 .sec-mujer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sec-mujer1 .sec-mujer a {
+    text-decoration: none;
+  }
+  .sec-mujer1 .sec-mujer a h3 {
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    border-radius: 999px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.397);
+    background-color: black;
+    padding: 5px 28px 5px;
+    transition: 1s;
+  }
+  .sec-mujer1 .sec-mujer a h3:hover {
+    transform: scale(1.1);
+    color: white;
+  }
   .fondo {
     font-family: "Ancizar Serif", serif;
     background-color: #111;
@@ -1111,6 +1172,7 @@ form .grid-container .enviar input:hover {
     font-family: "Poetsen One", sans-serif;
     font-weight: 200;
     font-size: 25px;
+    padding-right: 40px;
   }
   .sec-mujer1 div img {
     width: 50%;
@@ -1278,6 +1340,7 @@ form .grid-container .enviar input:hover {
     justify-content: center;
     flex-direction: column;
     margin: 30px;
+    padding-left: 20px;
   }
   .Productos-t div {
     border: 2px white solid;
@@ -1298,8 +1361,8 @@ form .grid-container .enviar input:hover {
     font-family: Arial, Helvetica;
     text-align: center;
     margin-bottom: 0 !important;
-    margin-left: 20px;
-    font-size: 13px;
+    margin-left: 15px !important;
+    font-size: 13px !important;
     padding: 5px;
   }
   .Productos div {
@@ -1461,6 +1524,59 @@ form .grid-container .enviar input:hover {
     font-family: Arial, Helvetica;
     font-weight: 700;
   }
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px;
+  }
+  .galeria .galeria-2 {
+    position: absolute;
+    bottom: 0;
+    padding-left: 20px;
+  }
+  .galeria .galeria-2 h3 {
+    padding: 5px 28px 5px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.397);
+    border-radius: 999px;
+    margin-top: 10px;
+    font-size: 15px;
+    transition: 1s;
+  }
+  .galeria .galeria-2 h3:hover {
+    transform: scale(1.1);
+    color: white;
+  }
+  .galeria .galeria-2 a {
+    text-decoration: none;
+  }
+  .galeria .galeria-2 a button {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.397);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 5px 28px 5px;
+    margin: 10px 20px 8px 0;
+    transition: 1s;
+  }
+  .galeria .galeria-2 a button:hover {
+    transform: scale(1.1);
+    color: white;
+  }
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tarjetas .tarjetas-1 {
+    width: 90%;
+    height: 600px;
+  }
+  .tarjetas .tarjetas-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .Productos div {
     border: 2px white solid;
     width: 250px;
@@ -1542,6 +1658,9 @@ form .grid-container .enviar input:hover {
   .fondo .pedidos p {
     margin: 5px;
     margin-bottom: 20px;
+  }
+  .looks {
+    padding-left: 30px;
   }
 }
 

@@ -100,7 +100,7 @@
 
             div{
                 text-align: center;
-                border: 2px solid $color-terciario;
+                border: 2px solid transparent;
                 width: 400px;
                 padding: 10px;
                 margin: 20px;
@@ -491,16 +491,24 @@
 }
 
 //? MUJER / HOMBRE
+.mujer{
+        .sec-mujer3{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
 
-.sec-mujer {
-    @include flex (flex, center);
+            .sec-mujer-dia{
+                border-right: 2px solid white;
+            }
 
-    img {
-        width: 50%;
-        height: 700px;
-        border-right: 5px solid white;
-    }
+            img{
+                width: 50%;
+                height: 700px;
+            }
+        }
 }
+
+
 
 .sec-mujer-titulo {
     text-align: center;
@@ -618,30 +626,6 @@
     font-size: 25px;
 }
 
-.sec-mujer1 {
-    @include tecno (flex, column);
-
-    div {
-        @include flex (flex, space-around);
-
-        img {
-            width: 50%;
-            height: 800px;
-            border-right: 5px solid white;
-        }
-    }
-
-    div {
-        @include flex (flex, space-around);
-
-        a {
-            margin-top: 15px;
-            font-family: "Poetsen One", sans-serif;
-            font-weight: 200;
-            font-size: 20px;
-        }
-    }
-}
 
 .Productos-t {
     @include flex (flex, space-around);
@@ -711,6 +695,49 @@
         }
     }
 }
+
+
+
+.sec-mujer1{
+    display: flex;
+    justify-content: space-between;
+
+        .sec-mujer{
+            width: 100%;
+            height: 800px;
+            margin: 2px;
+            position: relative;
+            margin-bottom: 5px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    position: absolute;
+                    bottom: 0;
+                    margin: 20px;
+                    border-radius: 999px;
+                    font-size: 17px;
+                    color: $letras-footer;
+                    background-color: black;
+                    padding: 5px 28px 5px;
+                    transition: 1s;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: white;
+                        }
+                }
+            }
+        }
+}
+
+
+
+
 
 
 //? CONTACTO

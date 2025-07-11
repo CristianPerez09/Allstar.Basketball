@@ -169,6 +169,64 @@
 
 
 @media screen and (max-width: 761px) {
+    .mujer{
+        .sec-mujer3{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+
+            .sec-mujer-dia{
+                border-right: 2px solid white;
+            }
+
+            img{
+                width: 50%;
+                height: 230px;
+            }
+        }
+}
+
+
+.sec-mujer1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+        .sec-mujer{
+            width: 99%;
+            height: 500px;
+            margin: 0px;
+            position: relative;
+            margin-bottom: 5px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    position: absolute;
+                    bottom: 0;
+                    margin: 20px;
+                    border-radius: 999px;
+                    font-size: 13px;
+                    color: $letras-footer;
+                    background-color: black;
+                    padding: 5px 28px 5px;
+                    transition: 1s;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: white;
+                        }
+                }
+            }
+        }
+}
+
+
+
+
     .fondo {
         font-family: "Ancizar Serif", serif;
         background-color: $color-primario;
@@ -216,6 +274,7 @@
         font-family: "Poetsen One", sans-serif;
         font-weight: 200;
         font-size: 25px;
+        padding-right: 40px;
     }
 
     .sec-mujer1 {
@@ -293,6 +352,7 @@
 
 
 @media screen and (max-width: 655px) {
+
     .box{
         width: 100%;
         height: 50px;
@@ -421,6 +481,7 @@
     .Productos-t {
         @include direction (flex, column, center);
         margin: 30px;
+        padding-left: 20px;
 
         div {
             border: 2px white solid;
@@ -445,8 +506,8 @@
             font-family: Arial, Helvetica;
             text-align: center;
             margin-bottom: 0 !important;
-            margin-left: 20px;
-            font-size: 13px;
+            margin-left: 15px !important;
+            font-size: 13px !important;
             padding: 5px;
         }
     }
@@ -644,6 +705,68 @@
         }
     }
 
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px;
+
+            .galeria-2{
+                position: absolute;
+                bottom: 0;
+                padding-left: 20px;
+
+                h3{
+                    padding: 5px 28px 5px;
+                    background-color: black;
+                    color: $letras-footer;
+                    border-radius: 999px;
+                    margin-top: 10px;
+                    font-size: 15px;
+                    transition: 1s;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: white;
+                        }
+                }
+
+                a{
+                    text-decoration: none;
+                    button{
+                        background-color: black;
+                        color: $letras-footer;
+                        font-weight: 600;
+                        border-radius: 999px;
+                        padding: 5px 28px 5px;
+                        margin: 10px 20px 8px 0;
+                        transition: 1s;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: white;
+                        }
+                    }
+                }
+    }
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+        .tarjetas-1{
+            width: 90%;
+            height: 600px;
+
+                img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+}
+
+
     .Productos {
         div {
             border: 2px white solid;
@@ -747,5 +870,9 @@
             margin-bottom: 20px;
         }
     }
+}
+
+.looks{
+    padding-left: 30px;
 }
 }
