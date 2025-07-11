@@ -405,9 +405,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 600px);
+    gap: 3px;
 
         .galeria-1{
-
             position: relative;
 
             img{
@@ -454,8 +454,7 @@
 }
 
 .tarjetas{
-    display: flex;
-    justify-content: space-between;
+    @include flex(flex, space-between);
 
         .tarjetas-1{
             width: 100%;
@@ -493,8 +492,7 @@
 //? MUJER / HOMBRE
 .mujer{
         .sec-mujer3{
-            display: flex;
-            justify-content: space-between;
+            @include flex(flex, space-between);
             margin-top: 50px;
 
             .sec-mujer-dia{
@@ -699,8 +697,7 @@
 
 
 .sec-mujer1{
-    display: flex;
-    justify-content: space-between;
+    @include flex(flex, space-between);
 
         .sec-mujer{
             width: 100%;

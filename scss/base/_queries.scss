@@ -171,8 +171,7 @@
 @media screen and (max-width: 761px) {
     .mujer{
         .sec-mujer3{
-            display: flex;
-            justify-content: space-between;
+            @include flex(flex, space-between);
             margin-top: 50px;
 
             .sec-mujer-dia{
@@ -188,9 +187,7 @@
 
 
 .sec-mujer1{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    @include direction (flex, space-between, column);
         .sec-mujer{
             width: 99%;
             height: 500px;
@@ -709,7 +706,7 @@
 .galeria{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 300px;
 
             .galeria-2{
                 position: absolute;
@@ -722,7 +719,7 @@
                     color: $letras-footer;
                     border-radius: 999px;
                     margin-top: 10px;
-                    font-size: 15px;
+                    font-size: 15px !important;
                     transition: 1s;
                         &:hover{
                             transform: scale(1.1);
@@ -732,6 +729,7 @@
 
                 a{
                     text-decoration: none;
+                    font-size: 13px !important;
                     button{
                         background-color: black;
                         color: $letras-footer;
@@ -750,12 +748,11 @@
 }
 
 .tarjetas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include direction(flex, column, center);
+    padding-left: 13px;
 
         .tarjetas-1{
-            width: 90%;
+            width: 95%;
             height: 600px;
 
                 img{
@@ -870,9 +867,5 @@
             margin-bottom: 20px;
         }
     }
-}
-
-.looks{
-    padding-left: 30px;
 }
 }

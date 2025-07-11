@@ -451,6 +451,7 @@ header .allstar a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 600px);
+  gap: 3px;
 }
 .galeria .galeria-1 {
   position: relative;
@@ -1098,8 +1099,8 @@ form .grid-container .enviar input:hover {
   }
   .sec-mujer1 {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: column;
+    flex-direction: space-between;
   }
   .sec-mujer1 .sec-mujer {
     width: 99%;
@@ -1527,7 +1528,7 @@ form .grid-container .enviar input:hover {
   .galeria {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 300px;
   }
   .galeria .galeria-2 {
     position: absolute;
@@ -1540,7 +1541,7 @@ form .grid-container .enviar input:hover {
     color: rgba(255, 255, 255, 0.397);
     border-radius: 999px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 15px !important;
     transition: 1s;
   }
   .galeria .galeria-2 h3:hover {
@@ -1549,6 +1550,7 @@ form .grid-container .enviar input:hover {
   }
   .galeria .galeria-2 a {
     text-decoration: none;
+    font-size: 13px !important;
   }
   .galeria .galeria-2 a button {
     background-color: black;
@@ -1565,11 +1567,12 @@ form .grid-container .enviar input:hover {
   }
   .tarjetas {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    padding-left: 13px;
   }
   .tarjetas .tarjetas-1 {
-    width: 90%;
+    width: 95%;
     height: 600px;
   }
   .tarjetas .tarjetas-1 img {
@@ -1658,9 +1661,6 @@ form .grid-container .enviar input:hover {
   .fondo .pedidos p {
     margin: 5px;
     margin-bottom: 20px;
-  }
-  .looks {
-    padding-left: 30px;
   }
 }
 
