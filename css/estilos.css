@@ -223,11 +223,15 @@ header .allstar a {
 }
 .caja .caja-2 .zapatillas div button {
   background-color: #111;
-  color: white;
+  color: rgba(255, 255, 255, 0.397);
   border-radius: 999px;
   padding: 10px;
   margin-top: 10px;
   transition: 1s;
+}
+.caja .caja-2 .zapatillas div button:hover {
+  transform: scale(1.1);
+  color: white;
 }
 
 .nosotros-1 {
@@ -426,10 +430,15 @@ header .allstar a {
 }
 .Productos div button {
   background-color: black;
-  color: white;
+  color: rgba(255, 255, 255, 0.397);
   border-radius: 999px;
   padding: 10px;
   margin-top: 10px;
+  transition: 1s;
+}
+.Productos div button:hover {
+  transform: scale(1.1);
+  color: white;
 }
 .Productos .productos-c img {
   width: 100%;
@@ -550,14 +559,15 @@ header .allstar a {
   border: 0;
   background: black;
   border-radius: 999px;
-  color: white;
+  color: rgba(255, 255, 255, 0.397);
   font-size: 18px;
   padding: 15px;
   cursor: pointer;
-  transition: 4s;
+  transition: 1s;
 }
 .sec-mujer-titulo a button:hover {
   transform: scale(1.1);
+  color: white;
 }
 .sec-mujer-titulo a button span {
   font-family: "Poetsen One", sans-serif;
@@ -615,10 +625,15 @@ header .allstar a {
 }
 .zapatillas div button {
   background-color: black;
-  color: white;
+  color: rgba(255, 255, 255, 0.397);
   border-radius: 999px;
   padding: 10px;
   margin-top: 10px;
+  transition: 1s;
+}
+.zapatillas div button:hover {
+  transform: scale(1.1);
+  color: white;
 }
 
 .calzado {
@@ -705,9 +720,14 @@ header .allstar a {
 }
 .Productos-t div button {
   background-color: black;
-  color: white;
+  color: rgba(255, 255, 255, 0.397);
   border-radius: 999px;
   padding: 10px;
+  transition: 1s;
+}
+.Productos-t div button:hover {
+  transform: scale(1.1);
+  color: white;
 }
 
 .comunidad {
@@ -772,7 +792,7 @@ form .grid-container .enviar {
 }
 form .grid-container .enviar input {
   background-color: #111;
-  color: white;
+  color: rgba(255, 255, 255, 0.397);
   cursor: pointer;
   font-family: Arial, Helvetica;
   font-weight: 600;
@@ -782,6 +802,7 @@ form .grid-container .enviar input {
 }
 form .grid-container .enviar input:hover {
   transform: scale(1.1);
+  color: white;
 }
 
 .terminos p {
@@ -898,6 +919,11 @@ form .grid-container .enviar input:hover {
   margin: 20px;
   text-decoration: none;
   color: rgb(151, 151, 151);
+}
+
+.run img {
+  width: 100%;
+  margin-bottom: 2px;
 }
 
 @media screen and (max-width: 1629px) {

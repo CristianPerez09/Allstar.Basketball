@@ -150,11 +150,15 @@
 
                 button {
                     background-color: $color-primario;
-                    color: $color-terciario;
+                    color: $letras-footer;
                     border-radius: 999px;
                     padding: 10px;
                     margin-top: 10px;
                     transition: 1s;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: white;
+                        }
                 }
             }
         }
@@ -372,10 +376,15 @@
 
         button {
             background-color: black;
-            color: white;
+            color: $letras-footer;
             border-radius: 999px;
             padding: 10px;
             margin-top: 10px;
+            transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
+                }
         }
     }
 
@@ -516,13 +525,14 @@
             border: 0;
             background: black;
             border-radius: 999px;
-            color: white;
+            color: $letras-footer;
             font-size: 18px;
             padding: 15px;
             cursor: pointer;
-            transition: 4s;
+            transition: 1s;
                 &:hover{
                     transform: scale(1.1);
+                    color: white;
                 }
                 span{
                     font-family: "Poetsen One", sans-serif;
@@ -587,10 +597,15 @@
 
         button {
             background-color: $color-letras;
-            color: white;
+            color: $letras-footer;
             border-radius: 999px;
             padding: 10px;
             margin-top: 10px;
+            transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
+                }
         }
     }
 }
@@ -685,9 +700,14 @@
 
         button {
             background-color: $color-letras;
-            color: white;
+            color: $letras-footer;
             border-radius: 999px;
             padding: 10px;
+            transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
+                }
         }
     }
 }
@@ -762,15 +782,16 @@ form {
 
                 input {
                     background-color: $color-primario;
-                    color: $color-terciario;
+                    color: $letras-footer;
                     cursor: pointer;
                     font-family: Arial, Helvetica;
                     font-weight: 600;
                     width: 400px;
                     height: 45px;
                     transition: 1s;
-                    &:hover{
-                    transform: scale(1.1);
+                        &:hover{
+                        transform: scale(1.1);
+                        color: white;
                     }
                 }
             }
