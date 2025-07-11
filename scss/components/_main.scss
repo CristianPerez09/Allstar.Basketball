@@ -217,9 +217,6 @@
             iframe {
                 margin-top: 50px;
                 align-items: center;
-                box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
-                    -webkit-box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
-                    -moz-box-shadow: 7px 7px 32px -4px rgba(0,0,0,0.4);
                         &:hover{
                             animation: transformacion 4s;
                         }
@@ -278,11 +275,8 @@
     }
 }
 
-.animate__bounceInRight {
-        --animate-duration: 1.7s;
-}
-
 .box{
+    margin-top: 40px;
     height: 100px;
         h2{
             margin-top: 50px;
@@ -398,6 +392,95 @@
     }
 }
 
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 600px);
+
+        .galeria-1{
+
+            position: relative;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .galeria-2{
+                position: absolute;
+                bottom: 0;
+                padding-left: 20px;
+
+                h3{
+                    padding: 5px 28px 5px;
+                    background-color: black;
+                    color: $letras-footer;
+                    border-radius: 999px;
+                    margin-top: 10px;
+                    font-size: 20px;
+                    transition: 1s;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: white;
+                        }
+                }
+
+                a{
+                    text-decoration: none;
+                    button{
+                        background-color: black;
+                        color: $letras-footer;
+                        font-weight: 600;
+                        border-radius: 999px;
+                        padding: 5px 28px 5px;
+                        margin: 10px 20px 8px 0;
+                        transition: 1s;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: space-between;
+
+        .tarjetas-1{
+            width: 100%;
+            height: 800px;
+            margin: 2px;
+            position: relative;
+            margin-bottom: 5px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    position: absolute;
+                    bottom: 0;
+                    margin: 10px;
+                    border-radius: 999px;
+                    font-size: 17px;
+                    color: $letras-footer;
+                    background-color: black;
+                    padding: 5px 28px 5px;
+                    transition: 1s;
+                        &:hover{
+                            transform: scale(1.1);
+                            color: white;
+                        }
+                }
+            }
+        }
+}
+
 //? MUJER / HOMBRE
 
 .sec-mujer {
@@ -431,9 +514,9 @@
         button {
             text-align: center;
             border: 0;
-            background: linear-gradient(90deg,rgba(191, 0, 0, 1) 0%, rgba(181, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+            background: black;
             border-radius: 999px;
-            color: #fff;
+            color: white;
             font-size: 18px;
             padding: 15px;
             cursor: pointer;

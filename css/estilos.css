@@ -16,7 +16,7 @@ header .titulo h1 {
   font-family: Arial, Helvetica;
   text-align: center;
   margin-bottom: 0 !important;
-  margin-left: 20px;
+  margin-left: 70px;
   font-size: 15px;
   padding: 5px;
   font-weight: 600;
@@ -281,9 +281,6 @@ header .allstar a {
 .nosotros-1 .maps div iframe {
   margin-top: 50px;
   align-items: center;
-  box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 7px 7px 32px -4px rgba(0, 0, 0, 0.4);
 }
 .nosotros-1 .maps div iframe:hover {
   animation: transformacion 4s;
@@ -337,11 +334,8 @@ header .allstar a {
   font-weight: 300;
 }
 
-.animate__bounceInRight {
-  --animate-duration: 1.7s;
-}
-
 .box {
+  margin-top: 40px;
   height: 100px;
 }
 .box h2 {
@@ -444,6 +438,88 @@ header .allstar a {
   width: 390px;
 }
 
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 600px);
+}
+.galeria .galeria-1 {
+  position: relative;
+}
+.galeria .galeria-1 img {
+  width: 100%;
+  height: 100%;
+}
+.galeria .galeria-1 .galeria-2 {
+  position: absolute;
+  bottom: 0;
+  padding-left: 20px;
+}
+.galeria .galeria-1 .galeria-2 h3 {
+  padding: 5px 28px 5px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.397);
+  border-radius: 999px;
+  margin-top: 10px;
+  font-size: 20px;
+  transition: 1s;
+}
+.galeria .galeria-1 .galeria-2 h3:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.galeria .galeria-1 .galeria-2 a {
+  text-decoration: none;
+}
+.galeria .galeria-1 .galeria-2 a button {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.397);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 5px 28px 5px;
+  margin: 10px 20px 8px 0;
+  transition: 1s;
+}
+.galeria .galeria-1 .galeria-2 a button:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: space-between;
+}
+.tarjetas .tarjetas-1 {
+  width: 100%;
+  height: 800px;
+  margin: 2px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.tarjetas .tarjetas-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tarjetas .tarjetas-1 a {
+  text-decoration: none;
+}
+.tarjetas .tarjetas-1 a h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  border-radius: 999px;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.397);
+  background-color: black;
+  padding: 5px 28px 5px;
+  transition: 1s;
+}
+.tarjetas .tarjetas-1 a h3:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
 .sec-mujer {
   display: flex;
   justify-content: center;
@@ -472,9 +548,9 @@ header .allstar a {
 .sec-mujer-titulo a button {
   text-align: center;
   border: 0;
-  background: linear-gradient(90deg, rgb(191, 0, 0) 0%, rgb(181, 0, 0) 50%, rgb(0, 0, 0) 100%);
+  background: black;
   border-radius: 999px;
-  color: #fff;
+  color: white;
   font-size: 18px;
   padding: 15px;
   cursor: pointer;
@@ -723,8 +799,8 @@ form .grid-container .enviar input:hover {
 
 .whatsapp {
   position: fixed;
-  right: 30px;
-  bottom: 60px;
+  right: 20px;
+  bottom: 30px;
   transition: 1s;
 }
 .whatsapp:hover {
@@ -1018,7 +1094,7 @@ form .grid-container .enviar input:hover {
     margin-top: 15px;
     font-family: "Poetsen One", sans-serif;
     font-weight: 200;
-    margin-left: 30px;
+    margin-right: 25px;
     font-size: 10px;
   }
   .Productos-t {
