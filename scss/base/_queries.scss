@@ -187,17 +187,17 @@
 
 
 .sec-mujer1{
-    @include direction (flex, space-between, column);
+    @include flex (flex, space-between);
         .sec-mujer{
-            width: 99%;
-            height: 500px;
+            width: 450px;
+            height: 350px;
             margin: 0px;
             position: relative;
             margin-bottom: 5px;
 
             img{
                 width: 100%;
-                height: 100%;
+                height: 350px;
                 object-fit: cover;
             }
             a{
@@ -205,9 +205,9 @@
                 h3{
                     position: absolute;
                     bottom: 0;
-                    margin: 20px;
+                    margin: 5px;
                     border-radius: 999px;
-                    font-size: 13px;
+                    font-size: 9px;
                     color: $letras-footer;
                     background-color: black;
                     padding: 5px 28px 5px;
@@ -245,7 +245,7 @@
 
     .sec-mujer-titulo {
         h2 {
-            font-size: 30px;
+            font-size: 25px;
             font-family: "Poetsen One", sans-serif;
             font-weight: 600;
             margin-top: 10px;
@@ -256,6 +256,11 @@
             font-family: Arial, Helvetica;
             font-weight: 400;
             margin-top: 10px;
+        }
+        a{
+            button{
+                font-size: 10px;
+            }
         }
 
     }
@@ -815,13 +820,19 @@
     }
 
     .comunidad {
+
+        img{
+            padding-right: 10px;
+        }
         h2 {
             font-size: 20px;
+            padding-right: 15px;
             font-weight: 400;
             font-family: "Alfa Slab One", serif;
         }
 
         p {
+            padding-right: 10px;
             font-size: 15px;
             margin-right: 10px;
         }

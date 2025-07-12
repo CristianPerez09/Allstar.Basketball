@@ -1099,19 +1099,18 @@ form .grid-container .enviar input:hover {
   }
   .sec-mujer1 {
     display: flex;
-    justify-content: column;
-    flex-direction: space-between;
+    justify-content: space-between;
   }
   .sec-mujer1 .sec-mujer {
-    width: 99%;
-    height: 500px;
+    width: 450px;
+    height: 350px;
     margin: 0px;
     position: relative;
     margin-bottom: 5px;
   }
   .sec-mujer1 .sec-mujer img {
     width: 100%;
-    height: 100%;
+    height: 350px;
     object-fit: cover;
   }
   .sec-mujer1 .sec-mujer a {
@@ -1120,9 +1119,9 @@ form .grid-container .enviar input:hover {
   .sec-mujer1 .sec-mujer a h3 {
     position: absolute;
     bottom: 0;
-    margin: 20px;
+    margin: 5px;
     border-radius: 999px;
-    font-size: 13px;
+    font-size: 9px;
     color: rgba(255, 255, 255, 0.397);
     background-color: black;
     padding: 5px 28px 5px;
@@ -1150,7 +1149,7 @@ form .grid-container .enviar input:hover {
     height: 200px;
   }
   .sec-mujer-titulo h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Poetsen One", sans-serif;
     font-weight: 600;
     margin-top: 10px;
@@ -1160,6 +1159,9 @@ form .grid-container .enviar input:hover {
     font-family: Arial, Helvetica;
     font-weight: 400;
     margin-top: 10px;
+  }
+  .sec-mujer-titulo a button {
+    font-size: 10px;
   }
   .zapatillas {
     display: flex;
@@ -1622,12 +1624,17 @@ form .grid-container .enviar input:hover {
     font-weight: 600;
     font-family: Arial, Helvetica;
   }
+  .comunidad img {
+    padding-right: 10px;
+  }
   .comunidad h2 {
     font-size: 20px;
+    padding-right: 15px;
     font-weight: 400;
     font-family: "Alfa Slab One", serif;
   }
   .comunidad p {
+    padding-right: 10px;
     font-size: 15px;
     margin-right: 10px;
   }
