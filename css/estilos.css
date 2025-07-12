@@ -1009,6 +1009,7 @@ form .grid-container .enviar input:hover {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 10px;
+    padding-left: 30px;
   }
   .Productos div {
     border: 2px white solid;
@@ -1168,14 +1169,14 @@ form .grid-container .enviar input:hover {
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    padding-right: 10px;
   }
   .calzado {
     text-align: center;
-    margin: 50px;
     font-family: "Poetsen One", sans-serif;
     font-weight: 200;
     font-size: 25px;
-    padding-right: 40px;
+    padding-right: 60px;
   }
   .sec-mujer1 div img {
     width: 50%;
@@ -1331,6 +1332,7 @@ form .grid-container .enviar input:hover {
     width: 175px;
     height: 100%;
     border: 1px white solid;
+    padding-left: 90px;
   }
   .fondo img {
     padding-left: 10px;
@@ -1343,7 +1345,7 @@ form .grid-container .enviar input:hover {
     justify-content: center;
     flex-direction: column;
     margin: 30px;
-    padding-left: 20px;
+    padding-left: 0;
   }
   .Productos-t div {
     border: 2px white solid;
@@ -1600,6 +1602,7 @@ form .grid-container .enviar input:hover {
     gap: 0 0px;
     margin-left: 0px;
     margin-top: 30px;
+    padding-left: 30px;
   }
   form .grid-container .container {
     display: flex;
